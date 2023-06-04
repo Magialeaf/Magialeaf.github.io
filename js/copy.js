@@ -28,7 +28,6 @@ document.addEventListener("copy", function () {
 // 禁用控制台
 document.onkeydown = function (e) 
 {
-    console.log(e.key);
     if (123 == window.event.keyCode || (e.ctrlKey && e.shiftKey && (74 === window.event.keyCode || 73 === window.event.keyCode|| 67 === window.event.keyCode)) || (e.ctrlKey && 85 === window.event.keyCode))
     {
         
@@ -36,12 +35,12 @@ document.onkeydown = function (e)
             new Vue({
                 data: function () {
                     this.$notify({
-                        title: "",
-                        message: "不能打开F12哦!",
+                        title: "检测到控制台被打开",
+                        message: "扒取源码要遵循GPL协议哦！",
                         position: 'top-left',
                         offset: 50,
                         showClose: true,
-                        type: "success",
+                        type: "info",
                         duration: 5000
                     });
                 }
