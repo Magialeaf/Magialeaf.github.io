@@ -1,0 +1,1300 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Ubuntu Linux | Magialeaf的小窝</title><meta name="author" content="Maigaleaf"><meta name="copyright" content="Maigaleaf"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Ubuntu Linux知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu Linux">
+<meta property="og:url" content="http://magialeaf.github.io/posts/57602ae6.html">
+<meta property="og:site_name" content="Magialeaf的小窝">
+<meta property="og:description" content="Ubuntu Linux知识">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://magialeaf.github.io/img/default_cover_12.png">
+<meta property="article:published_time" content="2023-05-21T04:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-04T08:18:04.391Z">
+<meta property="article:author" content="Maigaleaf">
+<meta property="article:tag" content="概述">
+<meta property="article:tag" content="计算机系统">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://magialeaf.github.io/img/default_cover_12.png"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="http://magialeaf.github.io/posts/57602ae6.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经过去","messageNext":"天了，文章内容可能已经过期！"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Maigaleaf","link":"链接: ","source":"来源: Magialeaf的小窝","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Ubuntu Linux',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-04 16:18:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="/css/announcement.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bookmark"></i><span> 作品</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/works/"><i class="fa-fw fa-sharp fa-solid fa-star"></i><span> 作品集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-comment"></i><span> 社区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/default_cover_12.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Magialeaf的小窝"><span class="site-name">Magialeaf的小窝</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><!-- span=' '+_p('search.title')--></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bookmark"></i><span> 作品</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/works/"><i class="fa-fw fa-sharp fa-solid fa-star"></i><span> 作品集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-comment"></i><span> 社区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Ubuntu Linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-04T08:18:04.391Z" title="更新于 2023-06-04 16:18:04">2023-06-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/">操作系统安全</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>26分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Ubuntu Linux"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Ubuntu-Linux"><a href="#Ubuntu-Linux" class="headerlink" title="Ubuntu Linux"></a>Ubuntu Linux</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://m.runoob.com/linux/linux-command-manual.html">Linux命令大全</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_54075859/article/details/126374197">Ubuntu设置中文输入</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/linux-useful-command.html">常用命令</a></p>
+</blockquote>
+<hr>
+<h2 id="一、Linux-Shell"><a href="#一、Linux-Shell" class="headerlink" title="一、Linux Shell"></a>一、Linux Shell</h2><h3 id="1-简介"><a href="#1-简介" class="headerlink" title="1 简介"></a>1 简介</h3><blockquote>
+<p>Shell接收用户指令，并协助用户完成与系统内核的交互，进而完成指令的执行。Bash就是一种代表性的Shell命令解释程序。</p>
+</blockquote>
+<h3 id="2-命令行"><a href="#2-命令行" class="headerlink" title="2 命令行"></a>2 命令行</h3><ul>
+<li><p>打开命令行界面</p>
+<ol>
+<li>组合键：Ctrl + Alt + T</li>
+<li>界面点击终端。</li>
+<li>路径 /user/bin/gnome-terminal</li>
+</ol>
+</li>
+<li><p>命令行提示</p>
+<p>[ 当前用户名 @ 主机名： 当前目录]   提示符</p>
+<ul>
+<li>~：当前登入用户的主目录</li>
+<li>$：普通用户的终端</li>
+<li>#：root用户的终端</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 改变Shell的工作目录</span></span><br><span class="line"><span class="built_in">cd</span> ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户名 : zp  主机名 : lab  当前工作目录为 : ~（/home/zp） 普通用户终端 : $ </span></span><br><span class="line">zp@lab：~$    </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-查看Shell"><a href="#3-查看Shell" class="headerlink" title="3 查看Shell"></a>3 查看Shell</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看当前使用的Shell程序</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$SHELL</span></span><br><span class="line"><span class="comment"># 查看当前系统中有效的Shell程序</span></span><br><span class="line"><span class="built_in">cat</span> /etc/shells</span><br><span class="line"><span class="comment"># 退出Shell程序</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="comment"># 更改Shell信息</span></span><br><span class="line">chsh</span><br></pre></td></tr></table></figure>
+<h3 id="4-命令"><a href="#4-命令" class="headerlink" title="4 命令"></a>4 命令</h3><h4 id="4-1-含义"><a href="#4-1-含义" class="headerlink" title="4.1 含义"></a>4.1 含义</h4><ul>
+<li>命令   [ 选项 ]   [ 参数 ]</li>
+<li>短命令选项前通常用 ‘ - ‘</li>
+<li>长命令选项前通常用 ‘ — ‘</li>
+</ul>
+<h4 id="4-2-root权限"><a href="#4-2-root权限" class="headerlink" title="4.2 root权限"></a>4.2 root权限</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 临时切换到root账户，执行su后输入密码</span></span><br><span class="line">su    </span><br><span class="line"><span class="comment"># 临时获取root权限来执行一条需要root权限的命令</span></span><br><span class="line">sudo cmd_name [ 其他参数选项 ]</span><br></pre></td></tr></table></figure>
+<h4 id="4-3-电源操作"><a href="#4-3-电源操作" class="headerlink" title="4.3 电源操作"></a>4.3 电源操作</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启</span></span><br><span class="line">reboot</span><br><span class="line"><span class="comment"># 关机</span></span><br><span class="line">shutdown</span><br><span class="line">shutdown -h now</span><br><span class="line"><span class="comment"># 关机并切断电源</span></span><br><span class="line">poweroff  </span><br></pre></td></tr></table></figure>
+<h4 id="4-4-查看信息"><a href="#4-4-查看信息" class="headerlink" title="4.4 查看信息"></a>4.4 查看信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 输出当前工作目录的名称</span></span><br><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 列出目录中的内容</span></span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line">ll / <span class="built_in">ls</span> -l</span><br><span class="line"><span class="comment"># 输出系统信息</span></span><br><span class="line"><span class="built_in">uname</span></span><br><span class="line"><span class="comment"># 显示或者设置系统的主机名</span></span><br><span class="line">hostname</span><br></pre></td></tr></table></figure>
+<h4 id="4-5-历史命令"><a href="#4-5-历史命令" class="headerlink" title="4.5 历史命令"></a>4.5 历史命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> [选项]</span><br><span class="line"></span><br><span class="line">num <span class="comment"># 查询近n条历史记录。</span></span><br><span class="line">-c <span class="comment"># 清空所有历史记录。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># tip：命令只要与上一条不相同，无论是否运行成功，都会加入到历史记录中。</span></span><br><span class="line"><span class="comment"># 箭头（上，下）查询上一条和下一条命令。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重复执行上一条指令</span></span><br><span class="line">!!</span><br><span class="line"><span class="comment"># 运行历史清单中的第num中命令（负号表示倒数）</span></span><br><span class="line">! num</span><br><span class="line"><span class="comment"># 运行上一条以letter字母开头的历史命令。</span></span><br><span class="line">! letter</span><br><span class="line"><span class="comment"># 编辑并运行上一条或第num条命令（负号表示倒数）</span></span><br><span class="line"><span class="built_in">fc</span> [ num ]  </span><br><span class="line"><span class="comment"># 运行前一条命令最后的参数</span></span><br><span class="line">!$ </span><br></pre></td></tr></table></figure>
+<h3 id="5-功能"><a href="#5-功能" class="headerlink" title="5 功能"></a>5 功能</h3><ul>
+<li><p>tab：自动补全。</p>
+</li>
+<li><p>Ctrl + C：强制中断。</p>
+</li>
+</ul>
+<h3 id="6-高阶技巧"><a href="#6-高阶技巧" class="headerlink" title="6 高阶技巧"></a>6 高阶技巧</h3><h4 id="6-1-管道"><a href="#6-1-管道" class="headerlink" title="6.1 管道"></a>6.1 管道</h4><ul>
+<li><p>命令1 | 命令2 …| 命令n</p>
+<blockquote>
+<p>在两个命令之间设置管道时，管道符左边命令的输出就变成了右边命令的输入。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="6-2-重定向"><a href="#6-2-重定向" class="headerlink" title="6.2 重定向"></a>6.2 重定向</h4><ul>
+<li><p>输入/输出重定向：改变输入与输出的方向。</p>
+<blockquote>
+<p>Linux中标准输入设备是键盘，标准输出设备是显示器。</p>
+<p>ID：文件描述符。</p>
+</blockquote>
+</li>
+<li><p>标准</p>
+<p>| ID   | 文件名 | 类型             | 硬件   |<br>| —— | ——— | ———————— | ——— |<br>| 0    | stdin  | 标准输入文件     | 键盘   |<br>| 1    | stdout | 标准输出文件     | 显示器 |<br>| 2    | stderr | 标准错误输出文件 | 显示器 |</p>
+</li>
+<li><p>输出重定向</p>
+<ul>
+<li><p>[ 命令 ] &gt; [ 文件 ]</p>
+<blockquote>
+<p>将某一命令执行的输出保存到文件中，源文件存在则会覆盖源文件内容。</p>
+</blockquote>
+</li>
+<li><p>[ 命令 ] &gt;&gt; [ 文件 ]</p>
+<blockquote>
+<p>将某一命令执行的输出保存到文件中，会添加到已经存在的文件中。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>输入重定向：</p>
+<ul>
+<li><p>[ 命令 ] &lt; [ 文件 ]</p>
+<blockquote>
+<p>该输入重定向命令将文件的内容作为命令的输入。</p>
+</blockquote>
+</li>
+<li><p>[ 命令 ] &lt;&lt; [ 分隔符 ]<br>> [ 文本内容 ]<br>> [ 分隔符 ]</p>
+<blockquote>
+<p>当前标准输入来自命令行的一对分隔符之间的内容</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>错误重定向：</p>
+<ul>
+<li><p>[ 命令 ] 2&gt; [ 文件 ]</p>
+<blockquote>
+<p>将某一命令执行的出错信息输出到文件中，源文件存在则会覆盖源文件内容。</p>
+</blockquote>
+</li>
+<li><p>[ 命令 ] 2&gt;&gt; [ 文件 ]</p>
+<blockquote>
+<p>将某一命令执行的出错信息输出保存到文件中，会添加到已经存在的文件中。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="6-3-命令排列"><a href="#6-3-命令排列" class="headerlink" title="6.3 命令排列"></a>6.3 命令排列</h4><ul>
+<li>; ：所有命令都被执行。</li>
+<li>&amp;&amp;：前为真才执行后。</li>
+<li>|| ：前为假才执行后。</li>
+<li>|：前作为后的参数。</li>
+<li>&amp;：多条命令在后台执行。</li>
+</ul>
+<h4 id="6-4-命令续航"><a href="#6-4-命令续航" class="headerlink" title="6.4 命令续航"></a>6.4 命令续航</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.转义符</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot; \$zp &quot;</span>  输出为<span class="variable">$zp</span>。</span><br><span class="line"><span class="comment"># 2.命令续行</span></span><br><span class="line">\ + enter</span><br></pre></td></tr></table></figure>
+<h4 id="6-5-命令替换"><a href="#6-5-命令替换" class="headerlink" title="6.5 命令替换"></a>6.5 命令替换</h4><ul>
+<li><p>定义</p>
+<blockquote>
+<p>将一个命令的结果作为命令的参数。</p>
+</blockquote>
+</li>
+<li><p>使用</p>
+<ol>
+<li>命令1$( 命令2 )</li>
+<li>命令1`命令2`（` 在键盘esc的下方）</li>
+</ol>
+</li>
+</ul>
+<h4 id="6-6-命令别名"><a href="#6-6-命令别名" class="headerlink" title="6.6 命令别名"></a>6.6 命令别名</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义</span></span><br><span class="line"><span class="built_in">alias</span> [别名] = [需要定义别名的命令]（用 <span class="string">&quot;&quot;</span> 括起）</span><br><span class="line"><span class="comment"># 查看</span></span><br><span class="line"><span class="built_in">alias</span></span><br><span class="line"><span class="comment"># 删除</span></span><br><span class="line"><span class="built_in">unalias</span> [别名]</span><br></pre></td></tr></table></figure>
+<h4 id="6-7-命令帮助系统"><a href="#6-7-命令帮助系统" class="headerlink" title="6.7 命令帮助系统"></a>6.7 命令帮助系统</h4><ol>
+<li>man [ 选项 ] [ 名称 ]</li>
+<li>info 命令名称</li>
+<li>命令名称 —help</li>
+</ol>
+<hr>
+<h2 id="二、文件和目录管理"><a href="#二、文件和目录管理" class="headerlink" title="二、文件和目录管理"></a>二、文件和目录管理</h2><h3 id="1-目录结构"><a href="#1-目录结构" class="headerlink" title="1 目录结构"></a>1 目录结构</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-system-contents.html">全部目录</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/422654168">目录作用</a></p>
+</blockquote>
+<ul>
+<li><p>/bin</p>
+<blockquote>
+<p>bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。</p>
+</blockquote>
+</li>
+<li><p>/boot</p>
+<blockquote>
+<p>这里存放的是启动 Linux 时使用的一些核心文件，包括一些连接文件以及镜像文件。</p>
+</blockquote>
+</li>
+<li><p>/dev </p>
+<blockquote>
+<p>dev 是 Device(设备) 的缩写, 该目录下存放的是 Linux 的外部设备，在 Linux 中访问设备的方式和访问文件的方式是相同的。</p>
+</blockquote>
+</li>
+<li><p>/etc</p>
+<blockquote>
+<p>etc 是 Etcetera(等等) 的缩写，这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p>
+</blockquote>
+</li>
+<li><p>/home</p>
+<blockquote>
+<p>用户的主目录，在 Linux 中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的，如上图中的 alice、bob 和 eve。</p>
+</blockquote>
+</li>
+<li><p>/lib</p>
+<blockquote>
+<p>lib 是 Library(库) 的缩写这个目录里存放着系统最基本的动态连接共享库，其作用类似于 Windows 里的 DLL 文件。几乎所有的应用程序都需要用到这些共享库。</p>
+</blockquote>
+</li>
+<li><p>/lost+found</p>
+<blockquote>
+<p>这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</p>
+</blockquote>
+</li>
+<li><p>/media</p>
+<blockquote>
+<p>linux 系统会自动识别一些设备，例如U盘、光驱等等，当识别后，Linux 会把识别的设备挂载到这个目录下。</p>
+</blockquote>
+</li>
+<li><p>/mnt</p>
+<blockquote>
+<p>系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在 /mnt/ 上，然后进入该目录就可以查看光驱里的内容了。</p>
+</blockquote>
+</li>
+<li><p>/opt</p>
+<blockquote>
+<p>opt 是 optional(可选) 的缩写，这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</p>
+</blockquote>
+</li>
+<li><p>/proc</p>
+<blockquote>
+<p>proc 是 Processes(进程) 的缩写，/proc 是一种伪文件系统（也即虚拟文件系统），存储的是当前内核运行状态的一系列特殊文件，这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。</p>
+<p>这个目录的内容不在硬盘上而是在内存里，我们也可以直接修改里面的某些文件，比如可以通过下面的命令来屏蔽主机的ping命令，使别人无法ping你的机器：<br><code>echo 1 &gt; /proc/sys/net/ipv4/icmp_echo_ignore_all</code></p>
+</blockquote>
+</li>
+<li><p>/root</p>
+<blockquote>
+<p>该目录为系统管理员，也称作超级权限者的用户主目录。</p>
+</blockquote>
+</li>
+<li><p>/sbin</p>
+<blockquote>
+<p>s 就是 Super User 的意思，是 Superuser Binaries (超级用户的二进制文件) 的缩写，这里存放的是系统管理员使用的系统管理程序。</p>
+</blockquote>
+</li>
+<li><p>/selinux</p>
+<blockquote>
+<p>这个目录是 Redhat/CentOS 所特有的目录，Selinux 是一个安全机制，类似于 windows 的防火墙，但是这套机制比较复杂，这个目录就是存放selinux相关的文件的。</p>
+</blockquote>
+</li>
+<li><p>/srv</p>
+<blockquote>
+<p>该目录存放一些服务启动之后需要提取的数据。</p>
+</blockquote>
+</li>
+<li><p>/sys</p>
+<blockquote>
+<p>这是 Linux2.6 内核的一个很大的变化。该目录下安装了 2.6 内核中新出现的一个文件系统 sysfs 。</p>
+<p>sysfs 文件系统集成了下面3种文件系统的信息：针对进程信息的 proc 文件系统、针对设备的 devfs 文件系统以及针对伪终端的 devpts 文件系统。</p>
+<p>该文件系统是内核设备树的一个直观反映。</p>
+<p>当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建。</p>
+</blockquote>
+</li>
+<li><p>/tmp</p>
+<blockquote>
+<p>tmp 是 temporary(临时) 的缩写这个目录是用来存放一些临时文件的。</p>
+</blockquote>
+</li>
+<li><p>/usr</p>
+<blockquote>
+<p>usr 是 unix shared resources(共享资源) 的缩写，这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于 windows 下的 program files 目录。</p>
+</blockquote>
+</li>
+<li><p>/usr/bin</p>
+<blockquote>
+<p>系统用户使用的应用程序。</p>
+</blockquote>
+</li>
+<li><p>/usr/sbin</p>
+<blockquote>
+<p>超级用户使用的比较高级的管理程序和系统守护程序。</p>
+</blockquote>
+</li>
+<li><p>/usr/src</p>
+<blockquote>
+<p>内核源代码默认的放置目录。</p>
+</blockquote>
+</li>
+<li><p>/var</p>
+<blockquote>
+<p>var 是 variable(变量) 的缩写，这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p>
+</blockquote>
+</li>
+<li><p>/run</p>
+<blockquote>
+<p>是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。如果你的系统上有 /var/run 目录，应该让它指向 run。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-文件类型"><a href="#2-文件类型" class="headerlink" title="2 文件类型"></a>2 文件类型</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/tsummer2010/article/details/104438878">文件类型信息</a></p>
+</blockquote>
+<ul>
+<li><p>查看文件类型</p>
+<p><code>ls -l  [ file ] || ll</code></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/omaidb/article/details/120090937">七种文件类型</a></p>
+<ul>
+<li>-：常规文件。</li>
+<li>d：目录文件。</li>
+<li>f：文件。</li>
+<li>b：块设备。</li>
+<li>c：串行端口。</li>
+<li>l：链接文件。</li>
+<li>p：进程文件。</li>
+<li>s：套接字文件。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">案例：</span><br><span class="line">drwxr-xr-x 2 cute cute 4096 11月 3 08:51 Desktop</span><br><span class="line"></span><br><span class="line">d：目录文件。</span><br><span class="line">rwxr-xr-x：文件的权限，属主、属组、其他人的权限（r读，w写，x执行，-无权）。</span><br><span class="line">2：文件的硬连接数。</span><br><span class="line">cute：属主。</span><br><span class="line">cute：属组。</span><br><span class="line">4096 ：文件的大小，对于目录而言：只是目录本身的大小，而不是里面内容的大小。</span><br><span class="line">11月 3 08:51 ：默认是文件的修改时间。</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看文件类型信息。</span></span><br><span class="line">file [文件]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-目录管理"><a href="#3-目录管理" class="headerlink" title="3 目录管理"></a>3 目录管理</h3><h4 id="3-1-一般参数"><a href="#3-1-一般参数" class="headerlink" title="3.1 一般参数"></a>3.1 一般参数</h4><ul>
+<li>-i：询问。</li>
+<li>-f：不询问。</li>
+<li>-v (—verbose)：提示。</li>
+<li>-r：递归子。</li>
+<li>-p：递归父。</li>
+</ul>
+<h4 id="3-2-touch"><a href="#3-2-touch" class="headerlink" title="3.2 touch"></a>3.2 touch</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-touch.html">touch</a></p>
+<p>创建新文件或修改文件属性。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> -para &lt;file&gt;</span><br><span class="line"></span><br><span class="line">-a <span class="comment"># 修改文件的读取时间记录（access time）（当前时间）</span></span><br><span class="line">-m <span class="comment"># 修改文件的修改时间记录（modify time）（当前时间）</span></span><br><span class="line">-c <span class="comment"># 不创建新文件</span></span><br><span class="line">-d <span class="comment"># 设定时间与日期,可以使用各种不同的格式</span></span><br><span class="line">-t <span class="comment"># 设定档案的时间记录,格式与date命令相同（20011230123456）=（2001.12.30 12:34:56）</span></span><br><span class="line">-r <span class="comment"># 使用参考档的时间记录,与 --test 的效果一样</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看文件属性</span></span><br><span class="line"><span class="built_in">stat</span> &lt;file&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-3-cp"><a href="#3-3-cp" class="headerlink" title="3.3 cp"></a>3.3 cp</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://m.runoob.com/linux/linux-comm-cp.html">cp</a></p>
+<p>复制文件或目录。  </p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 源可以是多个，目的只有最后一个（有多个源的话目的要是目录）</span></span><br><span class="line"><span class="built_in">cp</span> [options] sourse dest </span><br></pre></td></tr></table></figure>
+<h4 id="3-4-ln"><a href="#3-4-ln" class="headerlink" title="3.4 ln"></a>3.4 ln</h4><blockquote>
+<p>创建链接文件</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/414331203">软链接与硬链接</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ln 参数 链接目标 链接</span></span><br><span class="line"><span class="built_in">ln</span> [options] ... [-T] TARGET LINK_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 硬链接：不带参数</span></span><br><span class="line"><span class="comment"># 软连接（符号连接）：-s</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-5-mv"><a href="#3-5-mv" class="headerlink" title="3.5 mv"></a>3.5 mv</h4><blockquote>
+<p>移动文件或目录</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-mv.html">mv</a></p>
+<p>mv可以用来改名改名。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mv [选项] [源文件|目录] [目标文件|目录]</span></span><br><span class="line"><span class="built_in">mv</span> -para src dest</span><br></pre></td></tr></table></figure>
+<h4 id="3-6-rm"><a href="#3-6-rm" class="headerlink" title="3.6 rm"></a>3.6 rm</h4><blockquote>
+<p>删除文件或目录</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-rm.html">rm</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#rm [选项] [文件|目录]</span></span><br><span class="line"><span class="built_in">rm</span> -para file</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除Linux中所有文件</span></span><br><span class="line"><span class="built_in">rm</span> -rf /* </span><br><span class="line"><span class="comment"># 删除目录下所有文件而不删除目录</span></span><br><span class="line"><span class="built_in">rm</span> -<span class="built_in">rm</span> <span class="built_in">dir</span>/*</span><br></pre></td></tr></table></figure>
+<h3 id="4-目录操作"><a href="#4-目录操作" class="headerlink" title="4 目录操作"></a>4 目录操作</h3><h4 id="4-1-pwd"><a href="#4-1-pwd" class="headerlink" title="4.1 pwd"></a>4.1 pwd</h4><blockquote>
+<p>（print working directory）显示当前工作目录路径  。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure>
+<h4 id="4-2-cd"><a href="#4-2-cd" class="headerlink" title="4.2 cd"></a>4.2 cd</h4><blockquote>
+<p>改变工作目录</p>
+<ul>
+<li><code>.</code>：当前目录。</li>
+<li><code>..</code>：当前目录的父目录。</li>
+<li><code>~</code> ：当前用户的主目录。 </li>
+</ul>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># cd [目录]</span></span><br><span class="line"><span class="built_in">cd</span> path</span><br></pre></td></tr></table></figure>
+<h4 id="4-3-ls"><a href="#4-3-ls" class="headerlink" title="4.3 ls"></a>4.3 ls</h4><blockquote>
+<p> 列出目录下的档案或目录</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-ls.html">ls</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ls [选项] [目录|文件]</span></span><br><span class="line"><span class="built_in">ls</span> -para file</span><br></pre></td></tr></table></figure>
+<h4 id="4-4-mkdir"><a href="#4-4-mkdir" class="headerlink" title="4.4 mkdir"></a>4.4 mkdir</h4><blockquote>
+<p>创建指定名称的目录 </p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mkdir [选项] 目录...</span></span><br><span class="line"><span class="built_in">mkdir</span> -para file</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设定权限(类似 chmod，而不是 rwxrwxrwx 减 umask)</span></span><br><span class="line">-m (--mode) &lt;mode&gt; </span><br><span class="line"><span class="comment"># 创建多个目录</span></span><br><span class="line"><span class="built_in">mkdir</span> -v zp&#123;1..10&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="4-5-rmdir"><a href="#4-5-rmdir" class="headerlink" title="4.5 rmdir"></a>4.5 rmdir</h4><blockquote>
+<p>删除目录 </p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rmdir [选项] [目录名]</span></span><br><span class="line"><span class="built_in">rmdir</span> -para file</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="三、用户与用户组"><a href="#三、用户与用户组" class="headerlink" title="三、用户与用户组"></a>三、用户与用户组</h2><h3 id="1-用户账户"><a href="#1-用户账户" class="headerlink" title="1 用户账户"></a>1 用户账户</h3><ul>
+<li><p>用户账户定义</p>
+<ul>
+<li>超级用户root：$UID=0$</li>
+<li>系统用户：$1&lt;UID&lt;999$</li>
+<li>普通用户：$UID&gt;1000$</li>
+</ul>
+</li>
+<li><p>用户账户文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一般账户信息</span></span><br><span class="line">/etc/passwd</span><br><span class="line">username:password:uid:gid:userinfo:home:shell</span><br><span class="line"><span class="comment"># 用户名：密码（x表示映射到了shadow里）：用户ID：组ID：用户注释：主目录：默认shell</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用户密码信息</span></span><br><span class="line">/etc/shadow</span><br><span class="line">username:password:lastchg:min:max:warn:inactive:expire:flag</span><br><span class="line"><span class="comment"># 用户名：密码（!未设置密码）：最后改密码的日期：改口令间隔：有效最大天数：换密码前几天警告：几天后禁止登入：被禁时间：保留</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-用户命令"><a href="#2-用户命令" class="headerlink" title="2 用户命令"></a>2 用户命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># useradd | adduser (Ubuntu) 添加用户</span></span><br><span class="line"><span class="comment"># useradd [选项] [用户名]</span></span><br><span class="line">useradd -para username</span><br><span class="line">-d <span class="comment"># 指定主目录，不存在-m可以创建主目录</span></span><br><span class="line">-g <span class="comment"># 指定用户组</span></span><br><span class="line">-r <span class="comment"># 建立系统账号</span></span><br><span class="line"><span class="comment"># adduser (Ubuntu)</span></span><br><span class="line">adduser <span class="comment"># 创建普通用户</span></span><br><span class="line">adduser --system <span class="comment"># 创建系统用户</span></span><br><span class="line">adduser --group <span class="comment"># 创建用户组</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># password | usermod | chage （改密码，改类型，改时效）</span></span><br><span class="line"><span class="comment"># password [选项] [用户名] 无参则表示设置密码</span></span><br><span class="line">password -para username </span><br><span class="line">-d <span class="comment"># 删除密码</span></span><br><span class="line"><span class="comment"># usermod [选项] [用户名]</span></span><br><span class="line">usermod -para username</span><br><span class="line">-d <span class="comment"># 设置登入目录</span></span><br><span class="line">-u <span class="comment"># 修改UID</span></span><br><span class="line"><span class="comment"># chage [选项] [用户名]（不输入参数直接进入交互模式）</span></span><br><span class="line">chage -para username</span><br><span class="line"></span><br><span class="line"><span class="comment"># userdel | deluser (Ubuntu) 删除用户</span></span><br><span class="line"><span class="comment"># userdel [选项] [用户名]</span></span><br><span class="line">userdel -para username</span><br><span class="line">-r 删除主目录和其中所有文件</span><br><span class="line">-f 强制删除用户</span><br><span class="line"><span class="comment"># deluser (Ubuntu)</span></span><br><span class="line">deluser</span><br><span class="line">deluser --system </span><br><span class="line">deluser --group</span><br></pre></td></tr></table></figure>
+<h3 id="3-用户组账户"><a href="#3-用户组账户" class="headerlink" title="3 用户组账户"></a>3 用户组账户</h3><ul>
+<li><p>用户组账户定义</p>
+<blockquote>
+<p>同理用户。</p>
+</blockquote>
+</li>
+<li><p>用户组账户文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 组用户信息</span></span><br><span class="line">/ect/group</span><br><span class="line">group_name:group_password:group_id:group_members</span><br><span class="line"><span class="comment"># 组用户名：组用户密码（x表示映射到了shadow里）：用户组ID：成员清单（逗号隔开）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 组密码信息</span></span><br><span class="line">/ect/gshadow</span><br><span class="line">group_name:group_password:group_id:group_members</span><br><span class="line"><span class="comment"># 组用户名：组用户密码（!未设置密码）：用户组ID：成员清单（逗号隔开）</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-用户组命令"><a href="#4-用户组命令" class="headerlink" title="4 用户组命令"></a>4 用户组命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># groupadd | addgroup(Ubuntu) 添加组</span></span><br><span class="line"><span class="comment"># group [选项] [组名]</span></span><br><span class="line">group -para group</span><br><span class="line">-f <span class="comment"># 组存在该选项失效并以成功状态退出，如果GID被使用，则取消-g</span></span><br><span class="line">-g <span class="comment"># 指定GID，GID唯一非负，默认大于等于GID_MIN，并大于每个其他组的GID</span></span><br><span class="line">-K <span class="comment"># 不使用/etc/login.defs 中的默认值（如GID_MIN、GID_MAX）</span></span><br><span class="line">-o <span class="comment"># 允许创建有重复GID的组</span></span><br><span class="line">-r <span class="comment"># 创建系统组账户，GID小于1000</span></span><br><span class="line"><span class="comment"># addgroup(Ubuntu)</span></span><br><span class="line">addgroup [--gid ID] GROUP <span class="comment"># 普通组</span></span><br><span class="line">addgroup --system [ --gid ID ] GROUP <span class="comment"># 系统组</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># groupmod 修改组属性</span></span><br><span class="line"><span class="comment"># groupmod [选项] [组账户名]</span></span><br><span class="line">groupmod -para group</span><br><span class="line">-g <span class="comment"># 修改用户组的GID</span></span><br><span class="line">-n <span class="comment"># 修改用户组名</span></span><br><span class="line">-o <span class="comment"># 允许使用重复的GID</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#groupdel | delgroup (Ubuntu)删除组</span></span><br><span class="line"><span class="comment"># groupdel [ 组名 ]</span></span><br><span class="line">groupdel group</span><br><span class="line"><span class="comment"># delgroup [ 组名 ]</span></span><br><span class="line">delgroup group</span><br><span class="line"></span><br><span class="line"><span class="comment"># gpasswd 管理组账户</span></span><br><span class="line">gpasswd</span><br><span class="line">-a <span class="comment"># 添加到用户组</span></span><br><span class="line">-d <span class="comment"># 删除用户组中的某一用户</span></span><br><span class="line">-A <span class="comment"># 指定管理员</span></span><br><span class="line">-M <span class="comment"># 指定组成员</span></span><br><span class="line">-r <span class="comment"># 删除密码</span></span><br><span class="line">-R <span class="comment"># 限制用户登入组，只有组中的成员才能用 newgrp 命令加入该组</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="四、磁盘分区"><a href="#四、磁盘分区" class="headerlink" title="四、磁盘分区"></a>四、磁盘分区</h2><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="1 定义"></a>1 定义</h3><ul>
+<li><p>磁盘分区</p>
+<blockquote>
+<p>将一个磁盘驱动器分成若干个逻辑驱动器。</p>
+<p>磁盘的分区信息保存在分区表中。分区表是一个磁盘分区的索引。</p>
+<p>MBR ( master boot record ) 主分区引导记录。</p>
+<p>GPT ( globally unique identifier partition table ) GUID分区表。</p>
+<p>GPT相对于MBR突出的优势是GPT可管理空间大、支持的分区数量多。</p>
+</blockquote>
+</li>
+<li><p>格式化</p>
+<blockquote>
+<p>格式化会情况现有分区的所有数据并创造一些系统文件。</p>
+</blockquote>
+</li>
+<li><p>命名方式</p>
+<blockquote>
+<p>sda sdb sdc … （依照设备ID）</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-查看设备列表"><a href="#2-查看设备列表" class="headerlink" title="2 查看设备列表"></a>2 查看设备列表</h3><blockquote>
+<p><code>ls /dev/sd*</code></p>
+</blockquote>
+<h3 id="3-fdisk"><a href="#3-fdisk" class="headerlink" title="3 fdisk"></a>3 fdisk</h3><blockquote>
+<p>磁盘分区（分区 &gt; 2 TB使用parted命令）</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># fdisk 命令参数带-，否则进入交互界面（交互界面用命令不带 -）</span></span><br><span class="line">fdisk</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常用交互界面命令</span></span><br><span class="line">F <span class="comment"># 列出空闲区</span></span><br><span class="line">n <span class="comment"># 创建新分区（p主分区，e扩展分区）（创建的最后扇区可以直接 +1G 进行分区）</span></span><br><span class="line">p <span class="comment"># 查看分区</span></span><br><span class="line">d <span class="comment"># 删除分区</span></span><br><span class="line">w/q <span class="comment"># 保存退出，不保存退出</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新读取分区表</span></span><br><span class="line">ioctl()</span><br></pre></td></tr></table></figure>
+<h3 id="4-mkfs"><a href="#4-mkfs" class="headerlink" title="4 mkfs"></a>4 mkfs</h3><blockquote>
+<p>创建文件系统</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-mkfs.html">mkfs</a></p>
+<p>创建了文件系统才可以挂载</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mkfs [选项][-t &lt;类型&gt;][文件系统选项]&lt;设备&gt;[&lt;大小&gt;]</span></span><br><span class="line">mkfs</span><br><span class="line"></span><br><span class="line">-V <span class="comment"># 详细显示模式</span></span><br><span class="line">-c <span class="comment"># 在建立文件系统前检查partition（分组）是否有坏道</span></span><br><span class="line">-t <span class="comment"># 指定文件系统的类型，不指定预设值为ext2</span></span><br><span class="line">&lt;大小&gt; <span class="comment"># 要使用设备上的快数</span></span><br><span class="line">&lt;设备&gt; <span class="comment"># 要使用设备的路径</span></span><br><span class="line">-v <span class="comment"># 显示版本信息</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-mount-umount"><a href="#5-mount-umount" class="headerlink" title="5 mount/umount"></a>5 mount/umount</h3><blockquote>
+<p>磁盘分区挂载与卸载</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># mount [-t文件系统类型][-L 卷标][-o 挂载选项]设备名 挂载点</span></span><br><span class="line">-t <span class="comment"># 不指定选自动选择</span></span><br><span class="line">-o <span class="comment"># 挂载选项</span></span><br><span class="line">loop <span class="comment"># 把一个文件当成磁盘分区挂载到系统上</span></span><br><span class="line">ro <span class="comment"># 采用只读挂载</span></span><br><span class="line">rw <span class="comment"># 采用读写挂载</span></span><br><span class="line">iocharset <span class="comment"># 指定访问文件系统所用的字符集</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># umount [选项] &lt;源&gt;|&lt;目录&gt;</span></span><br><span class="line">-a <span class="comment"># 卸载/etc/mtab中记录的所有文件系统</span></span><br><span class="line">-n <span class="comment"># 卸载时不将信息存入/etc/mtab中</span></span><br><span class="line">-r <span class="comment"># 无法成功卸载则尝试以只读方式重新挂入文件系统</span></span><br><span class="line">-t <span class="comment"># &lt;文件系统类型&gt; 仅卸载选项中所指定的文件系统</span></span><br><span class="line">-v <span class="comment"># 详细信息</span></span><br></pre></td></tr></table></figure>
+<h3 id="6-fsck"><a href="#6-fsck" class="headerlink" title="6 fsck"></a>6 fsck</h3><blockquote>
+<p>文件系统的检查和修复</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># fsck [选项][设备名]</span></span><br><span class="line">-p <span class="comment"># 不提示直接修复</span></span><br><span class="line">-c <span class="comment"># 检查可能的坏块并加入坏块列表</span></span><br><span class="line">-f <span class="comment"># 强制进行检查（即使被标记为“没有问题”）</span></span><br><span class="line">-n <span class="comment"># 只检查不修复</span></span><br><span class="line">-v <span class="comment"># 显示更多信息</span></span><br><span class="line">-y <span class="comment"># yes yes yes</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-df"><a href="#7-df" class="headerlink" title="7 df"></a>7 df</h3><blockquote>
+<p> 查看磁盘使用情况</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># df [选项][文件名]</span></span><br><span class="line">-h <span class="comment"># 易读显示 1KB = 1024B</span></span><br></pre></td></tr></table></figure>
+<h3 id="8-du"><a href="#8-du" class="headerlink" title="8 du"></a>8 du</h3><blockquote>
+<p>查看文件和目录磁盘使用情况</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># du [选项][文件]</span></span><br><span class="line">-h <span class="comment"># 易读</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="五、进程管理"><a href="#五、进程管理" class="headerlink" title="五、进程管理"></a>五、进程管理</h2><h3 id="1-查看"><a href="#1-查看" class="headerlink" title="1 查看"></a>1 查看</h3><h4 id="1-1-ps"><a href="#1-1-ps" class="headerlink" title="1.1 ps"></a>1.1 ps</h4><blockquote>
+<p>静态监控</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-ps.html">ps</a></p>
+</blockquote>
+<h4 id="1-2-pstree"><a href="#1-2-pstree" class="headerlink" title="1.2 pstree"></a>1.2 pstree</h4><blockquote>
+<p>查看进程树</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-pstree.html">pstree</a></p>
+</blockquote>
+<h4 id="1-3-top"><a href="#1-3-top" class="headerlink" title="1.3 top"></a>1.3 top</h4><blockquote>
+<p>动态监控</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-top.html">top</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-p pid <span class="comment"># 指定pid</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-4-lsof"><a href="#1-4-lsof" class="headerlink" title="1.4 lsof"></a>1.4 lsof</h4><blockquote>
+<p> 列出进程打开的文件的信息，端口号，网络活动。</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/linux-check-port-usage.html">lsof</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-i:port <span class="comment"># 端口活动</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-5-pidof"><a href="#1-5-pidof" class="headerlink" title="1.5 pidof"></a>1.5 pidof</h4><blockquote>
+<p>查看进程pid </p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pidof [选项][进程名]</span></span><br><span class="line">-s <span class="comment"># 表示只返回1个pid</span></span><br><span class="line">-x <span class="comment"># 表示同时返回运行给定程序的shell的pid</span></span><br><span class="line">-o <span class="comment"># 表示告诉 piod 表示忽略后面给定的pid可以使用多个-o</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-控制"><a href="#2-控制" class="headerlink" title="2 控制"></a>2 控制</h3><h4 id="2-1-nice"><a href="#2-1-nice" class="headerlink" title="2.1 nice"></a>2.1 nice</h4><blockquote>
+<p>调整即将运行的进程优先级</p>
+<p>NI：nice值越高表示高友善度，低优先级。（不能完全决定进程优先级）</p>
+<p>PRI：PRI( new ) = PRI ( old ) + NI ，同理NI。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># nice [命令][进程名]</span></span><br><span class="line">-n &lt;num&gt; <span class="comment"># 设置nice值（ 默认N=10 ）</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-2-renice"><a href="#2-2-renice" class="headerlink" title="2.2 renice"></a>2.2 renice</h4><blockquote>
+<p>调整运行的进程的优先级</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># renice [-n] &lt;优先级&gt; [ -p/-g/-u ] &lt;pid/gpid/user&gt;</span></span><br><span class="line">-n  <span class="comment"># 指定nice增量</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-3-kill"><a href="#2-3-kill" class="headerlink" title="2.3 kill"></a>2.3 kill</h4><blockquote>
+<p>发送指定信号给进程</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># kill [ -s 信号声明|-n 信号编号|-信号声明]进程号|任务声明 ...</span></span><br><span class="line">-l <span class="comment"># 列出所有信号</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-4-killall"><a href="#2-4-killall" class="headerlink" title="2.4 killall"></a>2.4 killall</h4><blockquote>
+<p>杀死指定名字的进程</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-killall.html">killall</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># killall [选项][进程号]</span></span><br><span class="line">-e <span class="comment"># 精确匹配名称</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-生命"><a href="#3-生命" class="headerlink" title="3 生命"></a>3 生命</h3><h4 id="3-1-启动"><a href="#3-1-启动" class="headerlink" title="3.1 启动"></a>3.1 启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="comment"># 前台启动</span></span><br><span class="line">vi &amp; <span class="comment"># 后台启动</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-2-挂起"><a href="#3-2-挂起" class="headerlink" title="3.2 挂起"></a>3.2 挂起</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + z <span class="comment"># 挂起</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-3-jobs"><a href="#3-3-jobs" class="headerlink" title="3.3 jobs"></a>3.3 jobs</h4><blockquote>
+<p>显示任务状态</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># jobs [选项][任务声明 ...]</span></span><br><span class="line">-l <span class="comment"># 在正常信息的基础上列出进程号</span></span><br><span class="line">-n <span class="comment"># 仅列出上次通告之后改变了状态的进程</span></span><br><span class="line">-p <span class="comment"># 仅列出进程号</span></span><br><span class="line">-r <span class="comment"># 限制仅输出运行中的任务</span></span><br><span class="line">-s <span class="comment"># 限制仅输出停止的任务</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-4-fg-将任务移至前台"><a href="#3-4-fg-将任务移至前台" class="headerlink" title="3.4 fg    将任务移至前台"></a>3.4 fg    将任务移至前台</h4><blockquote>
+<p><code>fg [ %N ]</code> 将任务N移至前台。</p>
+<p>N是通过jobs命令查到的后台任务编号。（不是pid）。</p>
+<p>不指定则Shell程序中的“当前任务”将会被使用。</p>
+</blockquote>
+<h4 id="3-5-bg-将任务移至后台"><a href="#3-5-bg-将任务移至后台" class="headerlink" title="3.5 bg   将任务移至后台"></a>3.5 bg   将任务移至后台</h4><blockquote>
+<p><code>bg [ %N ]</code> 将任务N移至后台。</p>
+<p>N是通过jobs命令查到的后台任务编号。（不是pid）</p>
+<p>不指定则Shell程序中的“当前任务”将会被使用。</p>
+</blockquote>
+<h4 id="3-6-nohup"><a href="#3-6-nohup" class="headerlink" title="3.6 nohup"></a>3.6 nohup</h4><blockquote>
+<p>启动脱离终端运行的任务</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-nohup.html">nohup</a></p>
+</blockquote>
+<hr>
+<h2 id="六、软件包管理"><a href="#六、软件包管理" class="headerlink" title="六、软件包管理"></a>六、软件包管理</h2><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1 备份"></a>1 备份</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 备份</span></span><br><span class="line">sudo <span class="built_in">mv</span> /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line">sudo vim /etc/apt/sources.list 或 sudo apt edit-sources</span><br><span class="line"><span class="comment"># 恢复</span></span><br><span class="line">sudo <span class="built_in">mv</span> /etc/apt/sources.list.bak /etc/apt/sources.list</span><br></pre></td></tr></table></figure>
+<h3 id="2-指令"><a href="#2-指令" class="headerlink" title="2 指令"></a>2 指令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># apt -&gt; apt-get</span></span><br><span class="line"><span class="comment"># 安装软件包</span></span><br><span class="line">apt install</span><br><span class="line"><span class="comment"># 移除软件包</span></span><br><span class="line">apt remove</span><br><span class="line"><span class="comment"># 移除软件包和配置</span></span><br><span class="line">apt purge</span><br><span class="line"><span class="comment"># 更新可用软件包列表</span></span><br><span class="line">apt update</span><br><span class="line"><span class="comment"># 升级所有可升级的软件包</span></span><br><span class="line">apt upgrade</span><br><span class="line"><span class="comment"># 自动删除不需要的包</span></span><br><span class="line">apt autoremove</span><br><span class="line"><span class="comment"># 在升级软件包时自动处理依赖关系</span></span><br><span class="line">apt full-upgrade</span><br><span class="line"></span><br><span class="line"><span class="comment"># apt -&gt; apt-cache</span></span><br><span class="line"><span class="comment"># 搜索应用程序</span></span><br><span class="line">apt search：</span><br><span class="line"><span class="comment"># 显示软件包细节</span></span><br><span class="line">apt show</span><br></pre></td></tr></table></figure>
+<h3 id="3-无法定位软件包"><a href="#3-无法定位软件包" class="headerlink" title="3 无法定位软件包"></a>3 无法定位软件包</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Mishell/p/12535063.html">无法定位软件包</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_49015005/article/details/117702582">无法定位软件包</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># root打开</span></span><br><span class="line">sudo mousepad /etc/apt/sources.list</span><br><span class="line"><span class="comment"># 更新apt</span></span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="comment"># 更新系统</span></span><br><span class="line">sudo apt-get upgrade</span><br><span class="line"><span class="comment"># 测试安装成功</span></span><br><span class="line">apt-cache search linux-headers</span><br><span class="line"><span class="comment"># 中科大镜像源</span></span><br><span class="line">deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</span><br><span class="line">deb-src http://http.kali.org/kali kali-rolling main non-free contrib</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="七、补充命令"><a href="#七、补充命令" class="headerlink" title="七、补充命令"></a>七、补充命令</h2><h3 id="1-系统操作"><a href="#1-系统操作" class="headerlink" title="1 系统操作"></a>1 系统操作</h3><h4 id="1-1-shutdown"><a href="#1-1-shutdown" class="headerlink" title="1.1 shutdown"></a>1.1 shutdown</h4><blockquote>
+<p>立刻关机</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-shutdown.html">shutdown</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 立刻关机</span></span><br><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
+<h4 id="1-2-nautilus-目录名称"><a href="#1-2-nautilus-目录名称" class="headerlink" title="1.2 nautilus + 目录名称"></a>1.2 nautilus + 目录名称</h4><blockquote>
+<p>打开目录</p>
+<p><code>nautilus &lt;path&gt;</code></p>
+</blockquote>
+<h3 id="2-文件操作"><a href="#2-文件操作" class="headerlink" title="2 文件操作"></a>2 文件操作</h3><h4 id="2-1-umask"><a href="#2-1-umask" class="headerlink" title="2.1 umask"></a>2.1 umask</h4><blockquote>
+<p>指定在建立文件时预设的权限掩码</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-umask.html">umask</a></p>
+</blockquote>
+<h4 id="2-2-wc"><a href="#2-2-wc" class="headerlink" title="2.2 wc"></a>2.2 wc</h4><blockquote>
+<p>用于计算字数</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-wc.html">wc</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-c <span class="comment"># 显示字节</span></span><br><span class="line">-l <span class="comment"># 显示行</span></span><br><span class="line">-w <span class="comment"># 显示字</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-3-cat"><a href="#2-3-cat" class="headerlink" title="2.3 cat"></a>2.3 cat</h4><blockquote>
+<p>concatenate，命令用于连接文件并打印到标准输出设备上</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-cat.html">cat</a></p>
+</blockquote>
+<h4 id="2-4-type"><a href="#2-4-type" class="headerlink" title="2.4 type"></a>2.4 type</h4><blockquote>
+<p>判断文件类型</p>
+<p><a target="_blank" rel="noopener" href="https://www.iteye.com/blog/codingstandards-831504">type</a></p>
+</blockquote>
+<h4 id="2-5-grep"><a href="#2-5-grep" class="headerlink" title="2.5 grep"></a>2.5 grep</h4><blockquote>
+<p>用于查找文件里符合条件的字符串</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-grep.html">grep</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用</span></span><br><span class="line"><span class="built_in">cat</span> &lt;file&gt; | grep <span class="string">&#x27;str&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 字符串匹配查询</span></span><br><span class="line">grep -w <span class="string">&#x27;str&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-6-tail"><a href="#2-6-tail" class="headerlink" title="2.6 tail"></a>2.6 tail</h4><blockquote>
+<p>用于查看文件的内容</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-tail.html">tail</a></p>
+</blockquote>
+<h4 id="2-7-find"><a href="#2-7-find" class="headerlink" title="2.7 find"></a>2.7 find</h4><blockquote>
+<p>用来在指定目录下查找文件</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-find.html">find</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找指定路径下的文件</span></span><br><span class="line">find path -name file</span><br></pre></td></tr></table></figure>
+<h3 id="3-用户操作"><a href="#3-用户操作" class="headerlink" title="3 用户操作"></a>3 用户操作</h3><h4 id="3-1-id"><a href="#3-1-id" class="headerlink" title="3.1 id"></a>3.1 id</h4><blockquote>
+<p>用于显示用户的ID，以及所属群组的ID</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-id.html">id</a></p>
+</blockquote>
+<h4 id="3-2-chmod"><a href="#3-2-chmod" class="headerlink" title="3.2 chmod"></a>3.2 chmod</h4><blockquote>
+<p>控制用户对文件的权限的命令</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-chmod.html">chmod</a></p>
+</blockquote>
+<h3 id="4-网络操作"><a href="#4-网络操作" class="headerlink" title="4 网络操作"></a>4 网络操作</h3><h4 id="4-1-ip查看"><a href="#4-1-ip查看" class="headerlink" title="4.1 ip查看"></a>4.1 ip查看</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ip地址</span></span><br><span class="line">ifconfig</span><br><span class="line"><span class="comment"># 网关</span></span><br><span class="line">route -n</span><br></pre></td></tr></table></figure>
+<h3 id="5-系统命令"><a href="#5-系统命令" class="headerlink" title="5 \ + 系统命令"></a>5 \ + 系统命令</h3><blockquote>
+<p>会使用系统原本自带的命令而不是命令的别名。（不加会优先使用别名）</p>
+</blockquote>
+<hr>
+<h2 id="八、Shell编程"><a href="#八、Shell编程" class="headerlink" title="八、Shell编程"></a>八、Shell编程</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="http://c.biancheng.net/shell/">shell</a></p>
+<p><a target="_blank" rel="noopener" href="http://c.biancheng.net/shell/program/">shell</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_50685659/article/details/125738428">shell的CSDN链接</a></p>
+</blockquote>
+<h3 id="1-头文件"><a href="#1-头文件" class="headerlink" title="1 头文件"></a>1 头文件</h3><blockquote>
+<p>默认 #! /bin/bash</p>
+<p>表示使用哪一种shell执行，可以修改。</p>
+<p>创建脚本有 vi/vim gedit</p>
+<p># 是注释</p>
+</blockquote>
+<h3 id="2-运行方式"><a href="#2-运行方式" class="headerlink" title="2 运行方式"></a>2 运行方式</h3><ol>
+<li><p>chmod +x  name.sh </p>
+<blockquote>
+<p>为脚本添加可执行权限，然后直接运行。</p>
+<p>该方法运行可以是绝对路径可以是相对路径。（相对： ./ ）</p>
+</blockquote>
+<ol>
+<li><p>bash name.sh</p>
+<blockquote>
+<p>sh name.sh</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>source name.sh</p>
+<blockquote>
+<p>. name.sh：直接运行，但是在terminal下值是静态的</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="3-变量"><a href="#3-变量" class="headerlink" title="3 变量"></a>3 变量</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-set.html">set</a>：设置</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-set.html">unset</a>：删除</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-expr.html">expr</a>：表达式计算：<code>expr $a + $b</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-let.html">let</a>：直接计算：<code>let x+=1</code></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57602ae6/shell变量的替换.jpg" alt="img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57602ae6/关联数组.jpg" alt="img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57602ae6/访问数组.jpg" alt="img"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量定义</span></span><br><span class="line">var=value <span class="comment">#（两边不能加空格）（变量中无特殊字符可以不加引号）</span></span><br><span class="line"><span class="string">&#x27; &#x27;</span> <span class="comment"># 原样输出。</span></span><br><span class="line"><span class="string">&quot; &quot;</span> <span class="comment"># 解析内容后输出。</span></span><br><span class="line">` ` <span class="comment"># 命令替换 （相比 $&#123; &#125; 移植性好）</span></span><br><span class="line"><span class="comment"># 变量访问</span></span><br><span class="line"><span class="variable">$&#123;name&#125;</span>  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 数组，元素间用空格隔开</span></span><br><span class="line">array_name=(value1 value2 value3 ... )</span><br><span class="line"><span class="comment"># 下标访问</span></span><br><span class="line"><span class="variable">$&#123;arrary_name[0]&#125;</span>（一定要带上大括号，不然会寻找会出错）</span><br><span class="line"><span class="comment"># 获取全部元素</span></span><br><span class="line"><span class="variable">$&#123;arrary_name[@ or *]&#125;</span></span><br><span class="line"><span class="comment"># 获取数组长度</span></span><br><span class="line"><span class="variable">$&#123;#arrary_name[@ or *]&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 环境变量</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$PATH</span></span><br><span class="line"><span class="comment"># 特殊变量</span></span><br><span class="line">$$ <span class="comment"># Shell本身的PID（ProcessID）</span></span><br><span class="line">$! <span class="comment"># Shell最后运行的后台Process的PID</span></span><br><span class="line">$? <span class="comment"># 最后运行的命令的结束代码（返回值）</span></span><br><span class="line">$- <span class="comment"># 使用Set命令设定的Flag一览</span></span><br><span class="line">$* <span class="comment"># 所有参数列表，以&quot;$1$2...$n&quot;形式输出所有参数</span></span><br><span class="line"><span class="variable">$@</span> <span class="comment"># 输出所有参数，每个参数作为一个单独的字符串</span></span><br><span class="line"><span class="variable">$#</span> <span class="comment"># 添加到Shell的参数个数</span></span><br><span class="line"><span class="variable">$0</span> <span class="comment"># Shell本身的文件名</span></span><br><span class="line"><span class="variable">$1</span>~<span class="variable">$n</span> <span class="comment"># 添加到Shell的各参数值：$1第一个参数，$n第n个参数</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 算术表达式（无空格）</span></span><br><span class="line">$[100/2]</span><br><span class="line"><span class="comment"># 逻辑表达式（左右有空格，数字与符号间有空格）</span></span><br><span class="line"><span class="built_in">test</span> 2 = 5</span><br><span class="line">[ 2 = 5 ]</span><br><span class="line"><span class="comment">#结果用$?可获得，0为真1为假。</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-交互"><a href="#4-交互" class="headerlink" title="4 交互"></a>4 交互</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 标准化输出</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot; &quot;</span> </span><br><span class="line">-e <span class="comment"># 识别转义字符</span></span><br><span class="line">-n <span class="comment"># 忽略换行</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 格式化输出（变量置后，带取值符号,同C）</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot; &quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输入</span></span><br><span class="line"><span class="built_in">read</span> <span class="string">&quot;&quot;</span></span><br><span class="line">-p <span class="comment"># 提示语句 后面跟变量（变量不带取值符号）</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-条件判断"><a href="#5-条件判断" class="headerlink" title="5 条件判断"></a>5 条件判断</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lyndon_li/article/details/120735191">真与假</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="keyword">elif</span> condition</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">[ <span class="keyword">else</span> ]</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="comment"># condition：条件，带上 (( )) 或 [[ ]]（要空格隔开） （这中间再写 的 [] 之间不要用空格隔开 ）</span></span><br><span class="line"><span class="comment"># 写在同一行则每个语句后要带分号（分号前后紧跟）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> condition <span class="keyword">in</span></span><br><span class="line">num)</span><br><span class="line">statement</span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line">statement</span><br><span class="line">;;</span><br><span class="line"><span class="comment"># condition：不要带括号</span></span><br><span class="line"><span class="comment"># ;;：break</span></span><br><span class="line"><span class="comment"># *)：default</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断是否是字符设备</span></span><br><span class="line"><span class="keyword">if</span> [ -c <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> ]</span><br></pre></td></tr></table></figure>
+<h3 id="6-循环"><a href="#6-循环" class="headerlink" title="6 循环"></a>6 循环</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># C语言</span></span><br><span class="line"><span class="keyword">for</span> ((i=<span class="number">0</span>;i&lt;x;i+=<span class="number">1</span>))</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">statement</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-函数"><a href="#7-函数" class="headerlink" title="7 函数"></a>7 函数</h3><ul>
+<li><p>定义</p>
+<ol>
+<li><code>function func_name () &#123;&#125;</code></li>
+<li><code>func_name () &#123;&#125;</code></li>
+<li><code>function func_name &#123;&#125;</code></li>
+</ol>
+</li>
+<li><p>return 返回值</p>
+<blockquote>
+<p>一般不用return返回函数中的值（容易出错）</p>
+<p>一般用<code>$?</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="8-运算符"><a href="#8-运算符" class="headerlink" title="8 运算符"></a>8 运算符</h3><ul>
+<li>数值比较运算符</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-eq -ne</td>
+<td>等于，不等于</td>
+</tr>
+<tr>
+<td>-gt -ge （Greater than it）</td>
+<td>大于，大于等于</td>
+</tr>
+<tr>
+<td>-lt -le（less than it）</td>
+<td>小于，小于等于</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>逻辑运算符</p>
+<blockquote>
+<p>在括号内，括号外是 &amp;&amp; 和 || </p>
+</blockquote>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>!</td>
+<td>非</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>或</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>与</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>字符串检测运算符</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不等于</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>长度为0</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>长度不为0</td>
+</tr>
+<tr>
+<td>$</td>
+<td>为空</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>文件测试运算符</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-b</td>
+<td>检测文件是否是块设备文件</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>检测文件是否是字符设备文件</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>检测文件是否是目录文件</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>检测文件是否是普通文件（既不是目录也不是设备文件）</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>检测文件是否设置了SGID位</td>
+</tr>
+<tr>
+<td>-k</td>
+<td>检测文件是否设置了粘着位（stucky Bit）</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>检测文件是否具名管道</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>检测文件是否设置了SUID位</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>检测文件是否可读</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>检测文件是否可写</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>检测文件是否可执行</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>检测文件是否为不为空（文件大小是否不为0）</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>检测文件(包括目录)是否存在</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>检测文件(包括目录)是否存在</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>检测文件是否是套接字</td>
+</tr>
+<tr>
+<td>-L</td>
+<td>检测文件是否存在并且是一个符号链接</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="九、GCC"><a href="#九、GCC" class="headerlink" title="九、GCC"></a>九、GCC</h2><h3 id="1-vi-vim编辑"><a href="#1-vi-vim编辑" class="headerlink" title="1 vi/vim编辑"></a>1 vi/vim编辑</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-vim.html">vi/vim</a></p>
+</blockquote>
+<ul>
+<li><p>命令模式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:w <span class="comment"># 保存</span></span><br><span class="line">:q <span class="comment"># 退出</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑模式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">i <span class="comment"># 进入编辑</span></span><br><span class="line">esc <span class="comment"># 退出编辑</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-安装gcc"><a href="#2-安装gcc" class="headerlink" title="2 安装gcc"></a>2 安装gcc</h3><ul>
+<li>查看依赖关系：<code>apt-cache depends build-essential</code></li>
+<li>安装gcc：<code>sudo apt install build-essential</code></li>
+<li>查看版本：<code>gcc -v</code></li>
+</ul>
+<h3 id="3-GCC编译"><a href="#3-GCC编译" class="headerlink" title="3 GCC编译"></a>3 GCC编译</h3><blockquote>
+<p>编译会重编译源文件，所以对于复杂项目来说未改动的源文件不需要再编译。</p>
+</blockquote>
+<ul>
+<li><p>编译流程</p>
+<ol>
+<li>预处理（简化代码）：<code>gcc -E</code>（调用 cpp 生成 .i 文件）</li>
+<li>编译（C到汇编）：<code>gcc -S</code>（调用 ccl 生成 .s 文件）</li>
+<li>汇编（汇编到机器）：<code>gcc -c</code>（调用 as 生成 .o 文件）</li>
+<li>链接（链接机器码）：<code>gcc</code>（调用 ld 生成文件）</li>
+</ol>
+<ul>
+<li>直接输出：<code>gcc</code></li>
+<li>指定输出文件：<code>-o zp</code></li>
+<li>输出编译警告：<code>gcc -Wall</code></li>
+</ul>
+</li>
+<li><p>复杂项目</p>
+<blockquote>
+<p>分别编译源文件再对编译后文件进行链接</p>
+</blockquote>
+<ol>
+<li><code>gcc -c hello.c</code></li>
+<li><code>gcc -c helloMain.c</code></li>
+<li><code>gcc -o hello hello.c helloMain.c</code></li>
+</ol>
+</li>
+<li><p>简单项目</p>
+<blockquote>
+<p>多个文件一起编译</p>
+</blockquote>
+<ul>
+<li><code>gcc hello.c helloMain.c hello.h -o hello</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="4-gdb调试"><a href="#4-gdb调试" class="headerlink" title="4 gdb调试"></a>4 gdb调试</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/357360607">gdb调试</a></p>
+<p><code>gcc -g main.c</code>编译出的文件才可以被调试</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l ( list )</td>
+<td>显示代码；list 行号——显示当前文件以“行号”为中心的前后10行代码；list 函数名——显示“函数名”所在函数的源代码。</td>
+</tr>
+<tr>
+<td>b n( break )</td>
+<td>设置端点，参数为行数或函数名；也可用“文件名：行数”或“文件名：函数名”</td>
+</tr>
+<tr>
+<td>tb n( tbreak )</td>
+<td>临时端点，参数同b</td>
+</tr>
+<tr>
+<td>info b [ n ] ( i b/info break )</td>
+<td>查看断点</td>
+</tr>
+<tr>
+<td>info program</td>
+<td>查看程序是否正在运行，程序进程号，被暂停的原因</td>
+</tr>
+<tr>
+<td>clear n</td>
+<td>清除第n行断点</td>
+</tr>
+<tr>
+<td>d n ( delete )</td>
+<td>删除第n个断点</td>
+</tr>
+<tr>
+<td>disable n</td>
+<td>暂停第n个断点</td>
+</tr>
+<tr>
+<td>enable n</td>
+<td>开启第n个断点</td>
+</tr>
+<tr>
+<td>r ( run )</td>
+<td>执行程序</td>
+</tr>
+<tr>
+<td>s ( step )</td>
+<td>有函数进入函数，无则单步执行</td>
+</tr>
+<tr>
+<td>n ( next )</td>
+<td>单步执行，不进入函数</td>
+</tr>
+<tr>
+<td>c ( continue )</td>
+<td>继续执行程序</td>
+</tr>
+<tr>
+<td>p n( print )</td>
+<td>打印表达式；表达式：变量，操作或函数调用</td>
+</tr>
+<tr>
+<td>until</td>
+<td>可以运行程序直到退出循环体</td>
+</tr>
+<tr>
+<td>finish</td>
+<td>运行程序（直到当前函数完成返回），并打印函数返回时的堆栈地址和返回值及参数等信息</td>
+</tr>
+<tr>
+<td>watch n</td>
+<td>设置监视点，一旦被监视的“表达式”的值改变，gdb将强行终止正在被调试的程序</td>
+</tr>
+<tr>
+<td>frame n</td>
+<td>移动到指定的帧栈，并打印栈的信息；n为帧编号，不指定n则打印当前栈的信息</td>
+</tr>
+<tr>
+<td>set args n</td>
+<td>指定运行时的参数</td>
+</tr>
+<tr>
+<td>show args</td>
+<td>查看设置好的参数</td>
+</tr>
+<tr>
+<td>show paths</td>
+<td>查看程序运行路径；set environment varname [ = value]设置环境变量；用show environment [ varname ]查看环境变量</td>
+</tr>
+<tr>
+<td>cd / pwd</td>
+<td>切换/显示路径</td>
+</tr>
+<tr>
+<td>shell xxx</td>
+<td>执行shell命令行，xxx为shell命令</td>
+</tr>
+<tr>
+<td>bt ( backtrace)</td>
+<td>查看堆栈；最下面是先执行的函数</td>
+</tr>
+<tr>
+<td>threads</td>
+<td>查看所有线程</td>
+</tr>
+<tr>
+<td>thread n</td>
+<td>切换线程，参数为线程号；线程号用threads查看（流程：threads——thread n——bt）</td>
+</tr>
+<tr>
+<td>condition</td>
+<td>给断点设置触发条件，如（b 10 if a &gt; b ( condition 1 if a &gt; b ) 等价 ( 假设b 10的断点号为1) ）；取消用condition 断点号</td>
+</tr>
+<tr>
+<td>ignore</td>
+<td>特殊断点条件，程序只有到达该断点指定次数后才会触发。如ignore 1 10（断点号1的断点过10次后触发）</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>强行终止当前在调试的程序</td>
+</tr>
+<tr>
+<td>help</td>
+<td>帮助</td>
+</tr>
+<tr>
+<td>call 函数（参数）</td>
+<td>调用函数</td>
+</tr>
+<tr>
+<td>layout</td>
+<td>用于分割窗口。</td>
+</tr>
+<tr>
+<td>layout src</td>
+<td>显示源代码窗口</td>
+</tr>
+<tr>
+<td>layout asm</td>
+<td>显示反汇编窗口</td>
+</tr>
+<tr>
+<td>layout regs</td>
+<td>显示源代码/反汇编和CPU寄存器窗口</td>
+</tr>
+<tr>
+<td>layout split</td>
+<td>显示源代码和反汇编窗口</td>
+</tr>
+<tr>
+<td>display</td>
+<td>每次单步执行后输出被设置的表达式及值</td>
+</tr>
+<tr>
+<td>stepi / nexti</td>
+<td>单步跟踪一些机器指令</td>
+</tr>
+<tr>
+<td>Ctrl + L</td>
+<td>刷新窗口</td>
+</tr>
+<tr>
+<td>q ( quit )</td>
+<td>退出gdb</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="5-make-和-Makefile"><a href="#5-make-和-Makefile" class="headerlink" title="5 make 和 Makefile"></a>5 make 和 Makefile</h3><ol>
+<li><p>生成Makefile文件</p>
+</li>
+<li><p>输入<br>`target… : prerequisties …</p>
+<pre><code>         command
+         ...`
+</code></pre><blockquote>
+<p>command前必须是tab而不是空格。</p>
+<p>如果prerequisties中有一个以上的文件比target文件要新，command中定义的东西就会被执行。</p>
+<p># 为注释，# 为输出井号。\可以换行，后面不可以接空格</p>
+</blockquote>
+<ul>
+<li><p>例子</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">objects = main.o command.o</span><br><span class="line">edit:$(objects)</span><br><span class="line">        cc -o edit $(objects)</span><br><span class="line">$(objects):defs.h</span><br><span class="line">main.o:command.h</span><br><span class="line">command.o:buffer.h</span><br><span class="line">clean:</span><br><span class="line">        <span class="built_in">rm</span> edit $(objects)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>执行</p>
+<ul>
+<li>make编译Makefile</li>
+<li>执行clean：make clean</li>
+</ul>
+</li>
+</ol>
+<h3 id="6-Autotools-和-make-使用"><a href="#6-Autotools-和-make-使用" class="headerlink" title="6 Autotools 和 make 使用"></a>6 Autotools 和 make 使用</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.cppblog.com/noflybird/archive/2010/01/20/82973.html">autotools&amp;make</a></p>
+</blockquote>
+<h2 id="十、Linux高级应用"><a href="#十、Linux高级应用" class="headerlink" title="十、Linux高级应用"></a>十、Linux高级应用</h2><ul>
+<li><p><a href=".\Kali Linux">text::Kali Linux</a> </p>
+</li>
+<li><p>人工智能</p>
+</li>
+<li><p>区块链</p>
+</li>
+<li><p>大数据</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://Magialeaf.github.io">Maigaleaf</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://magialeaf.github.io/posts/57602ae6.html">http://magialeaf.github.io/posts/57602ae6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://Magialeaf.github.io" target="_blank">Magialeaf的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%A6%82%E8%BF%B0/">概述</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/">计算机系统</a><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><div class="post_share"><div class="social-share" data-image="/img/default_cover_12.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/c5fc2764.html" title="Kali Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" onerror="onerror=null;src='/img/error.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Kali Linux</div></div></a></div><div class="next-post pull-right"><a href="/posts/3bb1b741.html" title="Windows操作系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" onerror="onerror=null;src='/img/error.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Windows操作系统</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/c5fc2764.html" title="Kali Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Kali Linux</div></div></a></div><div><a href="/posts/3bb1b741.html" title="Windows操作系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Windows操作系统</div></div></a></div><div><a href="/posts/dbeddcc1.html" title="计算机操作系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">计算机操作系统</div></div></a></div><div><a href="/posts/8d4b7ae1.html" title="计算机组成原理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_8.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">计算机组成原理</div></div></a></div><div><a href="/posts/9add283d.html" title="Python_AI"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Python_AI</div></div></a></div><div><a href="/posts/dd9c034b.html" title="网站配置记录"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_10.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">网站配置记录</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Maigaleaf</div><div class="author-info__description">欢迎来到我的小窝！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Magialeaf"><i class="fab fa-github"></i><span>前往我的仓库</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://res.abeim.cn/api/qq?qq=1871154309" target="_blank" title="QQ"><i class="fa-brands fa-qq" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/45054712" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili" style="color: #24292e;"></i></a><a class="social-icon" href="https://leetcode.cn/u/heuristic-chandrasekhardtz/" target="_blank" title="leetcode"><i class="fas fa-code" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><card_announce_top>当前网站版本为V1.0<br /></card_announce_top> <card_announce_content> 1.这里大多数文章是我之前随意记的笔记，可能格式以及对网站的适配性有点不好。<br /> 2.并且文章大多数都类似于思维导图，没有太详细的内容。<br /> 3.之后会完善一些之前写的文章，以及写一些详细的文章放到网站上。<br /><br /> </card_announce_content> <card_announce_tip> 文章链接为紫色，链接前缀如下：<br /> &nbsp; 1.无前缀（百科或其他作者的链接）<br /> &nbsp; 2.author::（文章中引用了许多该作者的内容）<br /> &nbsp; 3.official::（官网链接）<br /> &nbsp; 4.text::（我的其他文本）<br /> &nbsp; 5.my::（我的库或其他链接）<br /> </card_announce_tip></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu-Linux"><span class="toc-text">Ubuntu Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Linux-Shell"><span class="toc-text">一、Linux Shell</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%AE%80%E4%BB%8B"><span class="toc-text">1 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%91%BD%E4%BB%A4%E8%A1%8C"><span class="toc-text">2 命令行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E7%9C%8BShell"><span class="toc-text">3 查看Shell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%91%BD%E4%BB%A4"><span class="toc-text">4 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E5%90%AB%E4%B9%89"><span class="toc-text">4.1 含义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-root%E6%9D%83%E9%99%90"><span class="toc-text">4.2 root权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E7%94%B5%E6%BA%90%E6%93%8D%E4%BD%9C"><span class="toc-text">4.3 电源操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF"><span class="toc-text">4.4 查看信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-%E5%8E%86%E5%8F%B2%E5%91%BD%E4%BB%A4"><span class="toc-text">4.5 历史命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8A%9F%E8%83%BD"><span class="toc-text">5 功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%AB%98%E9%98%B6%E6%8A%80%E5%B7%A7"><span class="toc-text">6 高阶技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-%E7%AE%A1%E9%81%93"><span class="toc-text">6.1 管道</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">6.2 重定向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-%E5%91%BD%E4%BB%A4%E6%8E%92%E5%88%97"><span class="toc-text">6.3 命令排列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-%E5%91%BD%E4%BB%A4%E7%BB%AD%E8%88%AA"><span class="toc-text">6.4 命令续航</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-5-%E5%91%BD%E4%BB%A4%E6%9B%BF%E6%8D%A2"><span class="toc-text">6.5 命令替换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-6-%E5%91%BD%E4%BB%A4%E5%88%AB%E5%90%8D"><span class="toc-text">6.6 命令别名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-7-%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F"><span class="toc-text">6.7 命令帮助系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86"><span class="toc-text">二、文件和目录管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">1 目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-text">2 文件类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86"><span class="toc-text">3 目录管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E4%B8%80%E8%88%AC%E5%8F%82%E6%95%B0"><span class="toc-text">3.1 一般参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-touch"><span class="toc-text">3.2 touch</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-cp"><span class="toc-text">3.3 cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-ln"><span class="toc-text">3.4 ln</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-mv"><span class="toc-text">3.5 mv</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-rm"><span class="toc-text">3.6 rm</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C"><span class="toc-text">4 目录操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-pwd"><span class="toc-text">4.1 pwd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-cd"><span class="toc-text">4.2 cd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-ls"><span class="toc-text">4.3 ls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-mkdir"><span class="toc-text">4.4 mkdir</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-rmdir"><span class="toc-text">4.5 rmdir</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%94%A8%E6%88%B7%E4%B8%8E%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">三、用户与用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7"><span class="toc-text">1 用户账户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%A8%E6%88%B7%E5%91%BD%E4%BB%A4"><span class="toc-text">2 用户命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%A8%E6%88%B7%E7%BB%84%E8%B4%A6%E6%88%B7"><span class="toc-text">3 用户组账户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%94%A8%E6%88%B7%E7%BB%84%E5%91%BD%E4%BB%A4"><span class="toc-text">4 用户组命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA"><span class="toc-text">四、磁盘分区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%9A%E4%B9%89"><span class="toc-text">1 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%9F%A5%E7%9C%8B%E8%AE%BE%E5%A4%87%E5%88%97%E8%A1%A8"><span class="toc-text">2 查看设备列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-fdisk"><span class="toc-text">3 fdisk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-mkfs"><span class="toc-text">4 mkfs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-mount-umount"><span class="toc-text">5 mount&#x2F;umount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-fsck"><span class="toc-text">6 fsck</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-df"><span class="toc-text">7 df</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-du"><span class="toc-text">8 du</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-text">五、进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%9F%A5%E7%9C%8B"><span class="toc-text">1 查看</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-ps"><span class="toc-text">1.1 ps</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-pstree"><span class="toc-text">1.2 pstree</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-top"><span class="toc-text">1.3 top</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-lsof"><span class="toc-text">1.4 lsof</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-pidof"><span class="toc-text">1.5 pidof</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%8E%A7%E5%88%B6"><span class="toc-text">2 控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-nice"><span class="toc-text">2.1 nice</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-renice"><span class="toc-text">2.2 renice</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-kill"><span class="toc-text">2.3 kill</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-killall"><span class="toc-text">2.4 killall</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%9F%E5%91%BD"><span class="toc-text">3 生命</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%90%AF%E5%8A%A8"><span class="toc-text">3.1 启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E6%8C%82%E8%B5%B7"><span class="toc-text">3.2 挂起</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-jobs"><span class="toc-text">3.3 jobs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-fg-%E5%B0%86%E4%BB%BB%E5%8A%A1%E7%A7%BB%E8%87%B3%E5%89%8D%E5%8F%B0"><span class="toc-text">3.4 fg    将任务移至前台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-bg-%E5%B0%86%E4%BB%BB%E5%8A%A1%E7%A7%BB%E8%87%B3%E5%90%8E%E5%8F%B0"><span class="toc-text">3.5 bg   将任务移至后台</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-nohup"><span class="toc-text">3.6 nohup</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-text">六、软件包管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%A4%87%E4%BB%BD"><span class="toc-text">1 备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%8C%87%E4%BB%A4"><span class="toc-text">2 指令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%97%A0%E6%B3%95%E5%AE%9A%E4%BD%8D%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-text">3 无法定位软件包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E8%A1%A5%E5%85%85%E5%91%BD%E4%BB%A4"><span class="toc-text">七、补充命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C"><span class="toc-text">1 系统操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-shutdown"><span class="toc-text">1.1 shutdown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-nautilus-%E7%9B%AE%E5%BD%95%E5%90%8D%E7%A7%B0"><span class="toc-text">1.2 nautilus + 目录名称</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="toc-text">2 文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-umask"><span class="toc-text">2.1 umask</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-wc"><span class="toc-text">2.2 wc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-cat"><span class="toc-text">2.3 cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-type"><span class="toc-text">2.4 type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-grep"><span class="toc-text">2.5 grep</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-tail"><span class="toc-text">2.6 tail</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-7-find"><span class="toc-text">2.7 find</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C"><span class="toc-text">3 用户操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-id"><span class="toc-text">3.1 id</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-chmod"><span class="toc-text">3.2 chmod</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C"><span class="toc-text">4 网络操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-ip%E6%9F%A5%E7%9C%8B"><span class="toc-text">4.1 ip查看</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4"><span class="toc-text">5 \ + 系统命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81Shell%E7%BC%96%E7%A8%8B"><span class="toc-text">八、Shell编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="toc-text">1 头文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%BF%90%E8%A1%8C%E6%96%B9%E5%BC%8F"><span class="toc-text">2 运行方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8F%98%E9%87%8F"><span class="toc-text">3 变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BA%A4%E4%BA%92"><span class="toc-text">4 交互</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="toc-text">5 条件判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%BE%AA%E7%8E%AF"><span class="toc-text">6 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%87%BD%E6%95%B0"><span class="toc-text">7 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">8 运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81GCC"><span class="toc-text">九、GCC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-vi-vim%E7%BC%96%E8%BE%91"><span class="toc-text">1 vi&#x2F;vim编辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85gcc"><span class="toc-text">2 安装gcc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-GCC%E7%BC%96%E8%AF%91"><span class="toc-text">3 GCC编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-gdb%E8%B0%83%E8%AF%95"><span class="toc-text">4 gdb调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-make-%E5%92%8C-Makefile"><span class="toc-text">5 make 和 Makefile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Autotools-%E5%92%8C-make-%E4%BD%BF%E7%94%A8"><span class="toc-text">6 Autotools 和 make 使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81Linux%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8"><span class="toc-text">十、Linux高级应用</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/dd9c034b.html" title="网站配置记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_10.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="网站配置记录"/></a><div class="content"><a class="title" href="/posts/dd9c034b.html" title="网站配置记录">网站配置记录</a><time datetime="2023-06-03T13:20:00.000Z" title="发表于 2023-06-03 21:20:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/371cb63b.html" title="2023-6的日常"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_2.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="2023-6的日常"/></a><div class="content"><a class="title" href="/posts/371cb63b.html" title="2023-6的日常">2023-6的日常</a><time datetime="2023-06-01T04:00:00.000Z" title="发表于 2023-06-01 12:00:00">2023-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f62ba5bb.html" title="反汇编代码分析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="反汇编代码分析"/></a><div class="content"><a class="title" href="/posts/f62ba5bb.html" title="反汇编代码分析">反汇编代码分析</a><time datetime="2023-05-27T07:00:00.000Z" title="发表于 2023-05-27 15:00:00">2023-05-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/dc2b0d38.html" title="2023-5的日常"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="2023-5的日常"/></a><div class="content"><a class="title" href="/posts/dc2b0d38.html" title="2023-5的日常">2023-5的日常</a><time datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/551f943f.html" title="网站日志"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="网站日志"/></a><div class="content"><a class="title" href="/posts/551f943f.html" title="网站日志">网站日志</a><time datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/default_cover_12.png')"><div id="footer-wrap"><div class="copyright">&copy;2023 By Maigaleaf</div><div class="footer_custom_text">版本V1.0</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><!-- 按钮阅读进度--><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><!-- 至底--><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script defer src="/js/copy.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="40" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(/img/default_cover_1.png);"> <a class="categoryBar-list-link" href="categories/日志/">日志</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">编程语言知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_2.png);"> <a class="categoryBar-list-link" href="categories/新技术/">新技术</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">游戏美术知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_3.png);"> <a class="categoryBar-list-link" href="categories/Crypto/">Crypto</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">游戏程序知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_4.png);"> <a class="categoryBar-list-link" href="categories/CTF案例/">CTF案例</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">密码学知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_5.png);"> <a class="categoryBar-list-link" href="categories/网络安全/">网络安全</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">CTF知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_6.png);"> <a class="categoryBar-list-link" href="categories/操作系统安全/">操作系统安全</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">新技术相关知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_7.png);"> <a class="categoryBar-list-link" href="categories/Misc/">Misc</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">操作系统知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_8.png);"> <a class="categoryBar-list-link" href="categories/编程语言/">编程语言</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">网络中的安全知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_9.png);"> <a class="categoryBar-list-link" href="categories/游戏美术/">游戏美术</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">杂项知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_10.png);"> <a class="categoryBar-list-link" href="categories/Web/">Web</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">逆向知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_11.png);"> <a class="categoryBar-list-link" href="categories/Reverse/">Reverse</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">网页知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_12.png);"> <a class="categoryBar-list-link" href="categories/游戏程序/">游戏程序</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">我的活动和网站日志</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/551f943f.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/551f943f.html" alt="">网站日志</a><div class="blog-slider__text">网站更新的相关日志</div><a class="blog-slider__button" href="posts/551f943f.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/371cb63b.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_2.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-01</span><a class="blog-slider__title" href="posts/371cb63b.html" alt="">2023-6的日常</a><div class="blog-slider__text">2023-6月的学习记录</div><a class="blog-slider__button" href="posts/371cb63b.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/54924480.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_6.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/54924480.html" alt="">Web渗透</a><div class="blog-slider__text">Web渗透概述</div><a class="blog-slider__button" href="posts/54924480.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/4b0178e0.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/4b0178e0.html" alt="">数据结构与算法</a><div class="blog-slider__text">数据结构与算法概述</div><a class="blog-slider__button" href="posts/4b0178e0.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/b81b1ca5.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/b81b1ca5.html" alt="">masm32汇编</a><div class="blog-slider__text">masm32汇编概述</div><a class="blog-slider__button" href="posts/b81b1ca5.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/c036635b.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_7.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/c036635b.html" alt="">PHP</a><div class="blog-slider__text">PHP概述</div><a class="blog-slider__button" href="posts/c036635b.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/cc1b9611.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_13.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/cc1b9611.html" alt="">JavaScript</a><div class="blog-slider__text">JavaScript概述</div><a class="blog-slider__button" href="posts/cc1b9611.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/a378bd8e.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_6.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/a378bd8e.html" alt="">Python</a><div class="blog-slider__text">Python使用概述</div><a class="blog-slider__button" href="posts/a378bd8e.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/cf1dc19e.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_7.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/cf1dc19e.html" alt="">Unity脚本</a><div class="blog-slider__text">Unity脚本程序概述</div><a class="blog-slider__button" href="posts/cf1dc19e.html" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__fadeIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__fadeInRight');
+    arr[i].setAttribute('data-wow-duration', '1.25s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

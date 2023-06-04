@@ -1,0 +1,12 @@
+#aside-content div div.announcement_content card_announce_top
+{
+  font-weight: bold;
+  color:rgb(154, 35, 35);
+} 
+
+#aside-content div div.announcement_content card_announce_tip
+{
+  display: block;
+  background: rgba(106, 151, 112, 0.2);
+  border-radius: 5px; /* 圆角 */
+} 

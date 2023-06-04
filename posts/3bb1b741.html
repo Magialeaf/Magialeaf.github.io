@@ -1,0 +1,1186 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Windows操作系统 | Magialeaf的小窝</title><meta name="author" content="Maigaleaf"><meta name="copyright" content="Maigaleaf"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Windows操作系统知识">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows操作系统">
+<meta property="og:url" content="http://magialeaf.github.io/posts/3bb1b741.html">
+<meta property="og:site_name" content="Magialeaf的小窝">
+<meta property="og:description" content="Windows操作系统知识">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://magialeaf.github.io/img/default_cover_14.png">
+<meta property="article:published_time" content="2023-05-21T04:00:00.000Z">
+<meta property="article:modified_time" content="2023-06-04T08:18:04.395Z">
+<meta property="article:author" content="Maigaleaf">
+<meta property="article:tag" content="概述">
+<meta property="article:tag" content="计算机系统">
+<meta property="article:tag" content="Windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://magialeaf.github.io/img/default_cover_14.png"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="http://magialeaf.github.io/posts/3bb1b741.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离上次更新已经过去","messageNext":"天了，文章内容可能已经过期！"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Maigaleaf","link":"链接: ","source":"来源: Magialeaf的小窝","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Windows操作系统',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-04 16:18:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/readPercent.css"><link rel="stylesheet" href="/css/announcement.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bookmark"></i><span> 作品</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/works/"><i class="fa-fw fa-sharp fa-solid fa-star"></i><span> 作品集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-comment"></i><span> 社区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/default_cover_14.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Magialeaf的小窝"><span class="site-name">Magialeaf的小窝</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><!-- span=' '+_p('search.title')--></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-bookmark"></i><span> 作品</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/works/"><i class="fa-fw fa-sharp fa-solid fa-star"></i><span> 作品集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa-solid fa-comment"></i><span> 社区</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-envelope-open"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Windows操作系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-04T08:18:04.395Z" title="更新于 2023-06-04 16:18:04">2023-06-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/">操作系统安全</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>24分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Windows操作系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Windows操作系统"><a href="#Windows操作系统" class="headerlink" title="Windows操作系统"></a>Windows操作系统</h1><hr>
+<h2 id="一、Windows使用"><a href="#一、Windows使用" class="headerlink" title="一、Windows使用"></a>一、Windows使用</h2><h3 id="1-控制面板"><a href="#1-控制面板" class="headerlink" title="1 控制面板"></a>1 控制面板</h3><h4 id="1-1-网络共享"><a href="#1-1-网络共享" class="headerlink" title="1.1 网络共享"></a>1.1 网络共享</h4><blockquote>
+<p>高级选项——开启 / 关闭网络共享</p>
+</blockquote>
+<h3 id="2-快捷键"><a href="#2-快捷键" class="headerlink" title="2 快捷键"></a>2 快捷键</h3><h4 id="2-1-选取"><a href="#2-1-选取" class="headerlink" title="2.1 选取"></a>2.1 选取</h4><blockquote>
+<p>Home / End：行首 / 尾</p>
+<p>ctrl + Home / End ：从光标处到行首 / 尾</p>
+<p>ctrl + shift + Home / End ：全选至行首 / 尾</p>
+<p>ctrl + A：选取全部</p>
+<p>ctrl + W：关闭所选文本</p>
+<p>alt + tab：切屏</p>
+</blockquote>
+<h4 id="2-2-撤回"><a href="#2-2-撤回" class="headerlink" title="2.2 撤回"></a>2.2 撤回</h4><blockquote>
+<p>ctrl + z 撤回</p>
+<p>ctrl + shift + z 前进</p>
+</blockquote>
+<h4 id="2-3-复制"><a href="#2-3-复制" class="headerlink" title="2.3 复制"></a>2.3 复制</h4><blockquote>
+<p>ctrl + c 复制</p>
+<p>ctrl + v 粘贴</p>
+<p>ctrl + x 剪切</p>
+</blockquote>
+<hr>
+<h2 id="二、CMD命令"><a href="#二、CMD命令" class="headerlink" title="二、CMD命令"></a>二、CMD命令</h2><h3 id="1-命令类型"><a href="#1-命令类型" class="headerlink" title="1 命令类型"></a>1 命令类型</h3><ul>
+<li><p>内部命令：物理内存中的一部分，系统自带，如：copy</p>
+</li>
+<li><p>外部命令：调用了C盘中的程序（命令可以改），如：mstsc（远程桌面），ping</p>
+<blockquote>
+<p>外部命令可以下载安装，放入C:\Windows\System32可直接使用。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-帮助"><a href="#2-帮助" class="headerlink" title="2 帮助"></a>2 帮助</h3><ul>
+<li>win+R 输入cmd打开cmd</li>
+<li>命令 + /?：显示命令帮助</li>
+</ul>
+<h3 id="3-界面"><a href="#3-界面" class="headerlink" title="3 界面"></a>3 界面</h3><h4 id="3-1-自定义DOS界面"><a href="#3-1-自定义DOS界面" class="headerlink" title="3.1 自定义DOS界面"></a>3.1 自定义DOS界面</h4><ul>
+<li><p><code>title + name</code>：标题</p>
+</li>
+<li><p><code>mode</code>：显示样式设置</p>
+<blockquote>
+<p><code>mode row,col</code>：设置行列值</p>
+</blockquote>
+</li>
+<li><p>color Tens</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">颜色整数值：Ten digits：背景颜色，one digit：字体颜色</span><br><span class="line"><span class="built_in">title</span> <span class="built_in">cmd</span> demo</span><br><span class="line"><span class="built_in">mode</span> <span class="number">12</span>,<span class="number">24</span></span><br><span class="line"><span class="built_in">color</span> <span class="number">07</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="3-2-chcp"><a href="#3-2-chcp" class="headerlink" title="3.2 chcp"></a>3.2 chcp</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.csdn.net/tags/MtjaEg4sMjE2NzYtYmxvZwO0O0OO0O0O.html#code_page_2"> &lt;其他&gt;参考连接</a></p>
+</blockquote>
+<ul>
+<li><p><code>chcp</code>：查看当前编码 </p>
+</li>
+<li><p><code>chcp [nnn]</code>：修改当前编码 </p>
+</li>
+<li><p>一般编码代码</p>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>编码代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UTF-8</td>
+<td>65001</td>
+</tr>
+<tr>
+<td>简体中文（GB2312）</td>
+<td>936</td>
+</tr>
+<tr>
+<td>繁体中文BIG5</td>
+<td>950</td>
+</tr>
+<tr>
+<td>日文</td>
+<td>932</td>
+</tr>
+<tr>
+<td>美国/加拿大英语</td>
+<td>437</td>
+</tr>
+<tr>
+<td>俄文</td>
+<td>866</td>
+</tr>
+<tr>
+<td>韩文</td>
+<td>949</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="4-网络"><a href="#4-网络" class="headerlink" title="4 网络"></a>4 网络</h3><h4 id="4-1-wget"><a href="#4-1-wget" class="headerlink" title="4.1 wget"></a>4.1 wget</h4><blockquote>
+<p><code>wget + url</code>：爬取网站（存到当前路径下）</p>
+</blockquote>
+<ul>
+<li>-r：递归全部爬取（慎用）</li>
+<li>-l：设置层次</li>
+<li>-o：设置输出位置</li>
+</ul>
+<h4 id="4-2-ipconfig"><a href="#4-2-ipconfig" class="headerlink" title="4.2 ipconfig"></a>4.2 ipconfig</h4><blockquote>
+<p>ipconfig ：显示网络配置</p>
+</blockquote>
+<ul>
+<li>/all：显示详细信息</li>
+<li>/release：释放IP</li>
+<li>/renew：重新获取IP</li>
+<li>/flushdns：刷新DNS</li>
+</ul>
+<h4 id="4-3-ping"><a href="#4-3-ping" class="headerlink" title="4.3 ping"></a>4.3 ping</h4><blockquote>
+<p>ping domain/IP：检测网络连通性。</p>
+</blockquote>
+<ul>
+<li>-t：一直ping直到停止</li>
+<li>-a：地址解析为主机名</li>
+<li>-n num：指定数据包数量</li>
+<li>-l large：指定数据包大小（字节）</li>
+<li>-w timeout：指定超时时间（毫秒）（存疑：-w设置为大于0的数都能ping通）</li>
+</ul>
+<blockquote>
+<p>DOS攻击：ping -l 65500 url -t</p>
+<p>电脑打开热点后无法ping通127.0.0.1</p>
+</blockquote>
+<h4 id="4-4-telnet"><a href="#4-4-telnet" class="headerlink" title="4.4 telnet"></a>4.4 telnet</h4><blockquote>
+<p>打开telnet：control——程序和功能——启动或关闭Windows功能——Telnet客户端</p>
+<p><code>telnet [host [port]]</code>：连接端口（可用于检测端口是否开放）</p>
+</blockquote>
+<h4 id="4-5-netstat"><a href="#4-5-netstat" class="headerlink" title="4.5 netstat"></a>4.5 netstat</h4><blockquote>
+<p>netstat：显示协议统计信息和TCP/IP状态</p>
+</blockquote>
+<ul>
+<li>命令参数<ul>
+<li>-a：详细</li>
+<li>-n：外部地址显示为 IP:port</li>
+<li>-o：关联的进程号</li>
+<li>-r：路由表</li>
+</ul>
+</li>
+<li>状态<ul>
+<li>LISTENING（监听）</li>
+<li>ESTABLISHED（连接）</li>
+<li>CLOSED（关闭）</li>
+<li>TIME-WAIT（等待足够时间）</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-6-netsh"><a href="#4-6-netsh" class="headerlink" title="4.6 netsh"></a>4.6 netsh</h4><ul>
+<li><p>网络配置</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">netsh——int ip：进行ipv4配置</span><br><span class="line"><span class="built_in">set</span> address name=&quot;本地连接&quot; source=static/dhcp (addr=ip mask=mask)：设置本地ip</span><br><span class="line"><span class="built_in">set</span> address name=&quot;本地连接&quot; gateway=ip gwmetric=<span class="number">1</span>：设置网关</span><br><span class="line"></span><br><span class="line">dump：显示配置脚本</span><br><span class="line">netsh dump &gt; <span class="built_in">path</span>：导出配置到<span class="built_in">path</span>中</span><br><span class="line"></span><br><span class="line">netsh winsock reset：重置Winsock目录（重新初始化网络环境，解决软件冲突、病毒原因造成的参数错误）</span><br><span class="line">netsh int ip reset c:\resetlog.txt：重置TCP/IP协议，相当于重装TCP/IP协议，恢复到初次安装操作系统时的状态</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>防火墙配置</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">firewall：简单配置</span><br><span class="line">advfirewall：高级配置</span><br><span class="line"></span><br><span class="line">例子：</span><br><span class="line">操作防火墙：netsh firewall <span class="built_in">set</span> opmode <span class="built_in">mode</span>=disable / enable（关闭 / 打开）</span><br><span class="line">开启端口：netsh firewall <span class="built_in">set</span> portopening TCP <span class="number">3389</span> ENABLE</span><br><span class="line">关闭端口：netsh firewall delete portopening TCP <span class="number">3389</span></span><br><span class="line">开启端口：netsh advfirewall firewall add rule name=baidujingyan <span class="built_in">dir</span>=<span class="keyword">in</span> action=allow protocol=TCP localport=<span class="number">3389</span></span><br><span class="line">关闭端口：netsh advfirewall firewall delete rule name=baidujingyan <span class="built_in">dir</span>=<span class="keyword">in</span> action=allow protocol=TCP localport=<span class="number">3389</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">dir</span>：<span class="keyword">in</span> / out（进站 / 出站）</span><br><span class="line">action：allow / disallow（允许 / 不允许）</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>wifi配置</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">netsh wlan show profiles：连接过的wifi</span><br><span class="line">netsh wlan show profiles name=&quot;name&quot; key=clear：查看wifi详细信息</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="4-7-arp"><a href="#4-7-arp" class="headerlink" title="4.7 arp"></a>4.7 arp</h4><blockquote>
+<p>查询arp记录</p>
+</blockquote>
+<ul>
+<li>/a：查询arp</li>
+<li>/s IP  mac：修改路由表</li>
+</ul>
+<h4 id="4-8-nsloopup"><a href="#4-8-nsloopup" class="headerlink" title="4.8 nsloopup"></a>4.8 nsloopup</h4><blockquote>
+<p>查询DNS记录</p>
+</blockquote>
+<h4 id="4-9-tracert"><a href="#4-9-tracert" class="headerlink" title="4.9 tracert"></a>4.9 tracert</h4><blockquote>
+<p>追踪网络</p>
+<p><code>tracert + ip/域名</code>：测试网络</p>
+</blockquote>
+<h3 id="5-文件"><a href="#5-文件" class="headerlink" title="5 文件"></a>5 文件</h3><h4 id="5-1-start"><a href="#5-1-start" class="headerlink" title="5.1  start"></a>5.1  start</h4><blockquote>
+<p><code>start + 路径/网址</code>：打开</p>
+<p>带空格打开带 <code>&quot; &quot;</code> </p>
+<p>例：<code>start &quot;C:\Program Files (x86)\Baidu&quot;</code></p>
+</blockquote>
+<ul>
+<li>/min：最小化打开</li>
+<li>/max：最大化打开（默认）</li>
+</ul>
+<h4 id="5-2-call"><a href="#5-2-call" class="headerlink" title="5.2 call"></a>5.2 call</h4><blockquote>
+<p>程序互相调用</p>
+<p><code>call + 路径</code>：调用</p>
+<p>调用完后会回到原来的程序。</p>
+</blockquote>
+<h4 id="5-3-sort"><a href="#5-3-sort" class="headerlink" title="5.3 sort"></a>5.3 sort</h4><blockquote>
+<p>排序</p>
+<p><code>sort + 路径</code>：对文件内容排序（按ASCII码顺序）</p>
+</blockquote>
+<ul>
+<li>/+n：从第n个字符开始排序</li>
+<li>/r：升序变降序</li>
+<li>/o + 路径：重定向输出</li>
+</ul>
+<h4 id="5-4-创建"><a href="#5-4-创建" class="headerlink" title="5.4 创建"></a>5.4 创建</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.iteye.com/blog/zhangjiankun880-962489">创建隐藏文件夹</a></p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 创建文件</span><br><span class="line"><span class="built_in">cd</span>. &gt; a.txt</span><br><span class="line"># 创建文件夹</span><br><span class="line"><span class="built_in">md</span> <span class="built_in">path</span></span><br><span class="line"></span><br><span class="line"># 创建无法打开的文件夹</span><br><span class="line"><span class="built_in">md</span> e:\news..\</span><br></pre></td></tr></table></figure>
+<h4 id="5-5-删除"><a href="#5-5-删除" class="headerlink" title="5.5 删除"></a>5.5 删除</h4><blockquote>
+<p><code>rd + path</code>：删除文件夹</p>
+<p><code>del + path</code>：删除文件</p>
+</blockquote>
+<ul>
+<li>/f：强制删除只读文件</li>
+<li>/s：删除所有子目录中的指定的文件</li>
+<li>/q：安静模式。删除全局通配符时，不要求确认</li>
+</ul>
+<h4 id="5-6-ren"><a href="#5-6-ren" class="headerlink" title="5.6 ren"></a>5.6 ren</h4><blockquote>
+<p>重命名文件</p>
+<p><code>ren old new</code>：重命名</p>
+</blockquote>
+<h4 id="5-7-move"><a href="#5-7-move" class="headerlink" title="5.7 move"></a>5.7 move</h4><blockquote>
+<p>移动文件</p>
+<p><code>move old new</code>：移动</p>
+</blockquote>
+<h4 id="5-8-attrib"><a href="#5-8-attrib" class="headerlink" title="5.8 attrib"></a>5.8 attrib</h4><blockquote>
+<p>更改文件属性</p>
+<p><code>attrib</code>：操作文件</p>
+</blockquote>
+<ul>
+<li>+h：隐藏文件</li>
+<li>-h：显示文件</li>
+</ul>
+<h4 id="5-9-cd"><a href="#5-9-cd" class="headerlink" title="5.9 cd"></a>5.9 cd</h4><blockquote>
+<p> 切换路径</p>
+<p>切换盘： 直接盘名+： 例如：<code>D:</code></p>
+<p>切换路径 ：<code>cd + 路径</code></p>
+</blockquote>
+<h3 id="6-内容"><a href="#6-内容" class="headerlink" title="6 内容"></a>6 内容</h3><h4 id="6-1-set"><a href="#6-1-set" class="headerlink" title="6.1 set"></a>6.1 set</h4><blockquote>
+<p>显示、设置、删除 cmd.exe环境变量</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 显示环境变量</span><br><span class="line"><span class="built_in">set</span></span><br><span class="line"># 显示环境变量name</span><br><span class="line"><span class="built_in">set</span> name：</span><br><span class="line"># 设置环境变量name值为xxx</span><br><span class="line"><span class="built_in">set</span> name=xxx</span><br><span class="line"># 设置值为空（等于删除环境变量）</span><br><span class="line"><span class="built_in">set</span> name=</span><br><span class="line"># 直接运算表达式的值（值可以赋给变量）</span><br><span class="line"><span class="built_in">set</span> /a &lt;expr&gt;</span><br><span class="line"># 输入赋值（值可以赋给变量）</span><br><span class="line"><span class="built_in">set</span> /p &lt;expr&gt;</span><br><span class="line"></span><br><span class="line"># 赋值案例</span><br><span class="line"><span class="built_in">set</span> /a var=<span class="number">4</span>*<span class="number">5</span></span><br><span class="line"><span class="built_in">set</span> /p var=请输入数字</span><br></pre></td></tr></table></figure>
+<h4 id="6-2-copy"><a href="#6-2-copy" class="headerlink" title="6.2 copy"></a>6.2 copy</h4><blockquote>
+<p>拼接文件</p>
+<p><a target="_blank" rel="noopener" href="https://www.iteye.com/blog/ongsh-875066">copy</a></p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">COPY</span>[/D][/V][/N][/Y | /-Y][/Z][/A | /B ]source[/A |/B][+ source [/A | /B][+ ...]][destination[/A|/B]]</span><br><span class="line"># source 指定要复制的文件。</span><br><span class="line">/A # 表示一个 ASCII 文本文件。</span><br><span class="line">/B # 表示一个二进位文件。</span><br><span class="line">/D # 允许解密要创建的目标文件</span><br><span class="line"># destinaton 为新文件指定目录和/或文件名。</span><br><span class="line">/V # 验证新文件写入是否正确。</span><br><span class="line">/N # 复制带有非 <span class="number">8</span>dot3 名称的文件时，尽可能使用短文件名。</span><br><span class="line">/Y # 不使用确认是否要改写现有目标文件的提示。</span><br><span class="line">/-Y # 使用确认是否要改写现有目标文件的提示。</span><br><span class="line">/Z # 用可重新启动模式复制已联网的文件。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 案例</span><br><span class="line"><span class="built_in">copy</span> <span class="number">111</span>.jpg /b + a.txt /a test.php</span><br></pre></td></tr></table></figure>
+<h4 id="6-3-type"><a href="#6-3-type" class="headerlink" title="6.3 type"></a>6.3 type</h4><blockquote>
+<p>查看文件内容</p>
+<p><code>type [drive:][path]filename</code>：显示内容</p>
+</blockquote>
+<h4 id="6-4-find"><a href="#6-4-find" class="headerlink" title="6.4 find"></a>6.4 find</h4><blockquote>
+<p>查找字符串（编码必须是ANSI）</p>
+<p><code>find &quot;str&quot;</code></p>
+<p><code>findstr str</code></p>
+</blockquote>
+<h4 id="6-5-时间管理"><a href="#6-5-时间管理" class="headerlink" title="6.5 时间管理"></a>6.5 时间管理</h4><blockquote>
+<p><code>date</code>：修改日期</p>
+<p><code>time</code>：修改时间</p>
+</blockquote>
+<ul>
+<li>/t：只读</li>
+</ul>
+<h4 id="6-6-tree"><a href="#6-6-tree" class="headerlink" title="6.6 tree"></a>6.6 tree</h4><blockquote>
+<p>树形查看文件列表</p>
+<p>tree：以图形显示驱动器或路径的文件夹结构。</p>
+<p><code>TREE [drive:][path][/F][/A]</code></p>
+</blockquote>
+<ul>
+<li>/f：显示每个文件夹中文件的名称。</li>
+<li>/a：使用 ASCII 字符，而不使用扩展字符。</li>
+</ul>
+<h4 id="6-7-dir"><a href="#6-7-dir" class="headerlink" title="6.7 dir"></a>6.7 dir</h4><blockquote>
+<p>查看当前目录文件</p>
+<p>dir：查看文件</p>
+</blockquote>
+<ul>
+<li>/a：详细查看全部类型文件（可以选择具体只查看哪种文件）<br>​</li>
+</ul>
+<h4 id="6-8-systeminfo"><a href="#6-8-systeminfo" class="headerlink" title="6.8 systeminfo"></a>6.8 systeminfo</h4><blockquote>
+<p>systeminfo：获得设备运行状况</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 远程获得（system：ip地址，user：主机名，password：密码）</span><br><span class="line">systeminfo /S system /U domain\user /P password</span><br></pre></td></tr></table></figure>
+<h4 id="6-9-whoami"><a href="#6-9-whoami" class="headerlink" title="6.9 whoami"></a>6.9 whoami</h4><blockquote>
+<p>whoami：查询用户信息</p>
+</blockquote>
+<ul>
+<li>/user：显示用户的SID</li>
+</ul>
+<h3 id="7-管理"><a href="#7-管理" class="headerlink" title="7 管理"></a>7 管理</h3><h4 id="7-1-磁盘管理"><a href="#7-1-磁盘管理" class="headerlink" title="7.1 磁盘管理"></a>7.1 磁盘管理</h4><h5 id="7-1-1-convert"><a href="#7-1-1-convert" class="headerlink" title="7.1.1 convert"></a>7.1.1 convert</h5><blockquote>
+<p>转化卷</p>
+<p>将 FAT 卷转换为 NTFS。</p>
+</blockquote>
+<h5 id="7-1-2-diskpart"><a href="#7-1-2-diskpart" class="headerlink" title="7.1.2 diskpart"></a>7.1.2 diskpart</h5><blockquote>
+<p>磁盘管理</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dispart：进入磁盘管理模式</span><br><span class="line"></span><br><span class="line">list disk：列出磁盘</span><br><span class="line">select disk n：选定第n块磁盘</span><br><span class="line">creat partition primary：创建主分区</span><br><span class="line"><span class="built_in">format</span> <span class="built_in">fs</span>=ntfs quick <span class="built_in">label</span>=&quot;E:&quot;：定义磁盘</span><br><span class="line">detail disk：显示磁盘分区</span><br><span class="line">select partition n：选择第n磁盘分区</span><br><span class="line">clean：格式化磁盘</span><br><span class="line"><span class="keyword">exit</span>：退出</span><br></pre></td></tr></table></figure>
+<h5 id="7-1-3-sfc"><a href="#7-1-3-sfc" class="headerlink" title="7.1.3 sfc"></a>7.1.3 sfc</h5><blockquote>
+<p>修复系统文件（admin下执行）</p>
+<p>扫描所有保护的系统文件的完整性，并使用正确的 Microsoft 版本替换不正确的版本。</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sfc：扫描</span><br><span class="line"></span><br><span class="line">/scannow：扫描并修复</span><br><span class="line">/verifyonly：扫描不修复</span><br><span class="line">或者指定文件</span><br></pre></td></tr></table></figure>
+<h5 id="7-1-4-chkdsk"><a href="#7-1-4-chkdsk" class="headerlink" title="7.1.4 chkdsk"></a>7.1.4 chkdsk</h5><blockquote>
+<p>检查磁盘</p>
+<p>检查磁盘并显示状态报告。</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chkdsk</span> [+磁盘名]：检查磁盘（不输入名字是全部磁盘）</span><br><span class="line"></span><br><span class="line">/f：修复</span><br><span class="line">/s：查找坏扇区并修复可读文件</span><br></pre></td></tr></table></figure>
+<h4 id="7-2-net管理"><a href="#7-2-net管理" class="headerlink" title="7.2 net管理"></a>7.2 net管理</h4><h5 id="7-2-1-net-user"><a href="#7-2-1-net-user" class="headerlink" title="7.2.1 net user"></a>7.2.1 net user</h5><blockquote>
+<p>用户管理</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> user [ name ]：查看用户</span><br><span class="line"></span><br><span class="line"><span class="built_in">net</span> user name [ passwd ]：对name用户进行操作</span><br><span class="line"></span><br><span class="line"><span class="built_in">net</span> user administrator passwd：（PowerShell打开）修改管理员密码</span><br><span class="line">/add：添加用户（需要密码）</span><br><span class="line">/<span class="built_in">del</span>：删除用户</span><br><span class="line">/active:no：禁用账户</span><br><span class="line">/active:yes：启用账户</span><br><span class="line">/Expires：设置账户过期时间（例：/Expires:nov,<span class="number">4</span>,<span class="number">2018</span>）</span><br><span class="line">/times：设置使用时段（例：/times:M-F,<span class="number">8</span>:<span class="number">00</span>-<span class="number">22</span>:<span class="number">00</span>;Sa-Su,<span class="number">19</span>:<span class="number">00</span>-<span class="number">21</span>:<span class="number">00</span>）</span><br><span class="line"><span class="built_in">net</span> user name$ passwd /add：设置隐藏账户</span><br></pre></td></tr></table></figure>
+<h5 id="7-2-2-net-localgroup"><a href="#7-2-2-net-localgroup" class="headerlink" title="7.2.2 net localgroup"></a>7.2.2 net localgroup</h5><blockquote>
+<p>本地组管理</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> localgroup [name]：查看组</span><br><span class="line"></span><br><span class="line"><span class="built_in">net</span> localgroup [group] [user]：对用户在组中操作</span><br><span class="line">/add：加入组</span><br><span class="line">/<span class="built_in">del</span>：离开组</span><br></pre></td></tr></table></figure>
+<h5 id="7-2-3-net-share-分享管理"><a href="#7-2-3-net-share-分享管理" class="headerlink" title="7.2.3 net share    分享管理"></a>7.2.3 net share    分享管理</h5><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> share：查看共享</span><br><span class="line"><span class="built_in">net</span> view + hostname：查看指定主机的共享</span><br><span class="line"></span><br><span class="line"><span class="built_in">net</span> share name=<span class="built_in">path</span>：设置共享路径，共享名（name + $：默认共享）</span><br><span class="line"><span class="built_in">net</span> share name /<span class="built_in">del</span>：取消共享</span><br></pre></td></tr></table></figure>
+<h5 id="7-2-4-net-stat-服务管理"><a href="#7-2-4-net-stat-服务管理" class="headerlink" title="7.2.4 net stat    服务管理"></a>7.2.4 net stat    服务管理</h5><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> stat + service：开启服务</span><br><span class="line"><span class="built_in">net</span> stop + service：关闭服务</span><br></pre></td></tr></table></figure>
+<h5 id="7-2-5-net-use"><a href="#7-2-5-net-use" class="headerlink" title="7.2.5 net use"></a>7.2.5 net use</h5><blockquote>
+<p>IPC$弱连接入侵</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> use：查看记录的新的网络连接</span><br><span class="line"><span class="built_in">net</span> use \\IP\ipc$ &quot;&quot; /user:&quot;&quot;：建立空连接</span><br><span class="line"><span class="built_in">net</span> use \\IP\ipc$ &quot;username&quot; /user:&quot;passwd&quot;：建立非空连接</span><br><span class="line"><span class="built_in">net</span> use z: \\IP\c$ &quot;passwd&quot; /user:&quot;username&quot;：将对方C盘映射到本地Z盘</span><br><span class="line"><span class="built_in">net</span> use z: \\IP\c$：已经和目标建立了ipc$，则可以直接用IP+盘符+$访问</span><br><span class="line"><span class="built_in">net</span> use \\IP\ipc$ /<span class="built_in">del</span>：删除一个ipc$连接</span><br><span class="line"><span class="built_in">net</span> use c: /<span class="built_in">del</span>：删除共享映射c盘</span><br></pre></td></tr></table></figure>
+<h4 id="7-3-进程管理"><a href="#7-3-进程管理" class="headerlink" title="7.3 进程管理"></a>7.3 进程管理</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/574634746.html"> &lt;其他&gt;参考连接</a></p>
+</blockquote>
+<h5 id="7-3-1-tasklist"><a href="#7-3-1-tasklist" class="headerlink" title="7.3.1 tasklist"></a>7.3.1 tasklist</h5><blockquote>
+<p>显示进程</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tasklist：查看运行中的进程</span><br><span class="line"></span><br><span class="line">tasklist | <span class="built_in">findstr</span> pid ：查看指定pid的进程信息</span><br></pre></td></tr></table></figure>
+<h5 id="7-3-2-taskkill"><a href="#7-3-2-taskkill" class="headerlink" title="7.3.2 taskkill"></a>7.3.2 taskkill</h5><blockquote>
+<p>杀死进程</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /pid xxx -f ：杀死进程（依照pid）</span><br><span class="line"><span class="built_in">taskkill</span> /im name /f ：杀死进程（依照名字）</span><br></pre></td></tr></table></figure>
+<h5 id="7-3-3-计划任务"><a href="#7-3-3-计划任务" class="headerlink" title="7.3.3 计划任务"></a>7.3.3 计划任务</h5><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">（已弃用）<span class="built_in">at</span>：查看计划任务</span><br><span class="line"><span class="built_in">at</span> <span class="built_in">time</span> &quot;exe&quot;：新加计划任务</span><br><span class="line"><span class="built_in">at</span> id /delete：删除计划任务</span><br><span class="line"></span><br><span class="line">schtasks.exe：查看计划任务</span><br></pre></td></tr></table></figure>
+<h4 id="7-4-系统管理"><a href="#7-4-系统管理" class="headerlink" title="7.4 系统管理"></a>7.4 系统管理</h4><h5 id="7-4-1-runas"><a href="#7-4-1-runas" class="headerlink" title="7.4.1 runas"></a>7.4.1 runas</h5><blockquote>
+<p>临时提权</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">开启许可：secpol.msc——本地策略——安全选项——账户：管理员账户状态——开启</span><br><span class="line"></span><br><span class="line">runas /noprofile /user:mymachine\administrator <span class="built_in">cmd</span>：临时管理员打开<span class="built_in">CMD</span>（mymachine：主机名）</span><br><span class="line">runas /user:mymachine\administrator /sa &quot;<span class="built_in">path</span>&quot;：临时管理员打开程序</span><br></pre></td></tr></table></figure>
+<h5 id="7-4-2-shutdown"><a href="#7-4-2-shutdown" class="headerlink" title="7.4.2 shutdown"></a>7.4.2 shutdown</h5><blockquote>
+<p>关机</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">shutdown：关机</span><br><span class="line"></span><br><span class="line">/i：图形化界面</span><br><span class="line">/s：关机</span><br><span class="line">/p：关机，无警告</span><br><span class="line">/r：重启</span><br><span class="line">/l：注销</span><br><span class="line">/a：终止关机</span><br><span class="line">/t <span class="built_in">time</span>：多少秒后关机</span><br></pre></td></tr></table></figure>
+<h5 id="7-4-3-slmgr"><a href="#7-4-3-slmgr" class="headerlink" title="7.4.3 slmgr"></a>7.4.3 slmgr</h5><blockquote>
+<p>激活操作系统</p>
+<p>查看操作系统信息或激活操作系统。</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">slmgr：帮助</span><br><span class="line"></span><br><span class="line">/xpr：到期时间</span><br><span class="line">/dli：详细信息</span><br><span class="line">/upk：卸载密钥</span><br><span class="line">/ipk + n：安装密钥</span><br><span class="line">/skms name：设置密钥管理服务计算机名</span><br><span class="line">/ato：成功激活产品</span><br></pre></td></tr></table></figure>
+<h5 id="7-4-4-注册表管理"><a href="#7-4-4-注册表管理" class="headerlink" title="7.4.4 注册表管理"></a>7.4.4 注册表管理</h5><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">regedit：注册表编辑器</span><br><span class="line">HKEY_CURRENT_USER：当前用户</span><br><span class="line">HKEY_LOCAL_MACHINE：当前机器</span><br><span class="line"></span><br><span class="line">reg：操作注册表</span><br><span class="line">增删改查 </span><br><span class="line"></span><br><span class="line">备份：reg export &quot;key&quot; file.reg</span><br><span class="line">导出：file.reg / reg import file.reg</span><br></pre></td></tr></table></figure>
+<h5 id="7-4-5-启动管理器"><a href="#7-4-5-启动管理器" class="headerlink" title="7.4.5 启动管理器"></a>7.4.5 启动管理器</h5><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">winver：win版本</span><br><span class="line">taskmgr：任务管理器</span><br><span class="line">compmgmt：计算机管理</span><br><span class="line">lusrmgr.msc：用户管理</span><br><span class="line">services.msc：服务管理</span><br><span class="line">firewall.cpl：防火墙管理</span><br><span class="line">gpedit.msc：本地组策略管理</span><br><span class="line">secpol.msc：本地安全策略</span><br><span class="line">regedit：注册表编辑器</span><br><span class="line">eventvwr.msc ：日志查看器</span><br><span class="line">control：控制面板</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="三、Bat脚本"><a href="#三、Bat脚本" class="headerlink" title="三、Bat脚本"></a>三、Bat脚本</h2><h3 id="1-回显"><a href="#1-回显" class="headerlink" title="1 回显"></a>1 回显</h3><blockquote>
+<p><code>@echo off</code>与<code>@echo on</code> 前者为关闭回显，后者为打开回显<br>当不想批处理文件中的命令一行一行在DOS中显示出来时（因为全部显示出来的话看起来会变得很杂乱），可以使用@echo off，将其放于程序的最上方就行了。</p>
+</blockquote>
+<h3 id="2-交互"><a href="#2-交互" class="headerlink" title="2 交互"></a>2 交互</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">输入：<span class="built_in">set</span> /p expr：输入赋值（值可以赋给变量） </span><br><span class="line"></span><br><span class="line">输出：<span class="built_in">echo</span> + 语句</span><br><span class="line">语句：提示语句 </span><br><span class="line"><span class="variable">%variable%</span>：显示变量值</span><br><span class="line"></span><br><span class="line">例：<span class="built_in">echo</span> you input:<span class="variable">%var%</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">换行：</span><br><span class="line"><span class="built_in">echo</span>=</span><br><span class="line"><span class="built_in">echo</span>, </span><br><span class="line"><span class="built_in">echo</span>; </span><br><span class="line"><span class="built_in">echo</span>+ </span><br><span class="line"><span class="built_in">echo</span>/ </span><br><span class="line"><span class="built_in">echo</span>[ </span><br><span class="line"><span class="built_in">echo</span>] </span><br><span class="line"><span class="function">echo: </span></span><br><span class="line"><span class="function"><span class="title">echo</span>. </span></span><br><span class="line"><span class="function"><span class="title">echo</span>\ </span></span><br><span class="line"><span class="function">效率依次递减</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-功能"><a href="#3-功能" class="headerlink" title="3 功能"></a>3 功能</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">rem 或 :: （双冒号）：注释</span></span><br><span class="line"><span class="built_in">cls</span>：清屏</span><br><span class="line"><span class="built_in">pause</span>：暂停</span><br><span class="line"><span class="keyword">exit</span>：退出</span><br></pre></td></tr></table></figure>
+<h3 id="4-占位符"><a href="#4-占位符" class="headerlink" title="4 占位符"></a>4 占位符</h3><blockquote>
+<p>%1 %2：第一个输入参数，第二个输入参数</p>
+</blockquote>
+<h3 id="5-goto-跳转"><a href="#5-goto-跳转" class="headerlink" title="5 goto    跳转"></a>5 goto    跳转</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:<span class="built_in">label</span>：标签</span><br><span class="line"><span class="function">goto label：跳转到标签处</span></span><br></pre></td></tr></table></figure>
+<h3 id="6-重定向"><a href="#6-重定向" class="headerlink" title="6 重定向"></a>6 重定向</h3><ul>
+<li><p>>：输出重定向（覆盖原记录）</p>
+<blockquote>
+<p>例：pause &gt; nul</p>
+<p>di&gt;right.txt</p>
+<p>2&gt;error.txt</p>
+</blockquote>
+</li>
+<li><p>>&gt;：追加输出重定向（追加原记录）</p>
+</li>
+<li><p>&lt;：输入重定向</p>
+</li>
+<li><p>句柄数字：</p>
+<ol>
+<li>键盘输入</li>
+<li>输出到命令提示符窗口</li>
+<li>错误输出</li>
+</ol>
+</li>
+</ul>
+<h3 id="7-特殊字符"><a href="#7-特殊字符" class="headerlink" title="7 特殊字符"></a>7 特殊字符</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#124;</td>
+<td>第一条命令结果作为第二条命令的参数</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>无论第一条命令是否成功都会执行后面的命令</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>第一条命令成功了才会执行第二条命令</td>
+</tr>
+<tr>
+<td>&#124;&#124;</td>
+<td>第一条命令失败了才会执行第二条命令</td>
+</tr>
+<tr>
+<td>()</td>
+<td>将命令括起（不常用）</td>
+</tr>
+<tr>
+<td>;</td>
+<td>分隔命令或分隔命令参数（不常用）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>案例<ul>
+<li>类似 if else：<code>dir &amp;&amp; echo success || echo failed</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="8-出错码"><a href="#8-出错码" class="headerlink" title="8 出错码"></a>8 出错码</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="variable">%errorlevel%</span>：输出错误码</span><br><span class="line"><span class="keyword">errorlevel</span>：查询上一条命令执行的错误码，<span class="number">0</span>为执行成功</span><br></pre></td></tr></table></figure>
+<h3 id="9-判断"><a href="#9-判断" class="headerlink" title="9 判断"></a>9 判断</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> a ( b ) <span class="keyword">else</span> ( c )：a条件，bc结果</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">exist</span> a ( b ) <span class="keyword">else</span> ( c )：a条件，bc结果</span><br></pre></td></tr></table></figure>
+<h3 id="10-循环"><a href="#10-循环" class="headerlink" title="10 循环"></a>10 循环</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FOR</span> %variable <span class="keyword">IN</span> (<span class="built_in">set</span>) <span class="keyword">DO</span> command [command-parameters]</span><br><span class="line"></span><br><span class="line">查找后缀为txt的文件</span><br><span class="line"><span class="keyword">for</span> /r <span class="built_in">path</span> %i <span class="keyword">in</span> (*.txt) <span class="keyword">do</span> <span class="built_in">echo</span> <span class="variable">%i（脚本中为%</span>%i）</span><br></pre></td></tr></table></figure>
+<h3 id="11-bat封装成exe"><a href="#11-bat封装成exe" class="headerlink" title="11 bat封装成exe"></a>11 bat封装成exe</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.sogou.com/link?url=hedJjaC291OfPyaFZYFLI4KQWvqt63NBNzAlF3XC1dH29RGaQ0phGA..">bat转exe</a></p>
+</blockquote>
+<ul>
+<li><p>winrar</p>
+<blockquote>
+<p>压缩——后缀改为exe——自解压选项——设置——提取后运行——bat的path</p>
+<p>path例子：./新建文件夹/1.bat</p>
+</blockquote>
+</li>
+<li><p>BatToExe：转化器</p>
+</li>
+</ul>
+<h3 id="12-Bat脚本实例"><a href="#12-Bat脚本实例" class="headerlink" title="12 Bat脚本实例"></a>12 Bat脚本实例</h3><h4 id="12-1-死循环"><a href="#12-1-死循环" class="headerlink" title="12.1 死循环"></a>12.1 死循环</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">%0：再次打开一次自己</span></span><br><span class="line"><span class="variable"></span></span><br><span class="line"><span class="variable">%</span><span class="number">0</span> | %<span class="number">0</span></span><br><span class="line">不断地自我重建，并占用所有的CPU资源。</span><br></pre></td></tr></table></figure>
+<h4 id="12-2-伪格式化"><a href="#12-2-伪格式化" class="headerlink" title="12.2 伪格式化"></a>12.2 伪格式化</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">chcp</span> <span class="number">65001</span> &gt; <span class="built_in">nul</span></span><br><span class="line"><span class="built_in">Color</span> <span class="number">4</span>A</span><br><span class="line"><span class="built_in">Title</span> 系统损坏器</span><br><span class="line"><span class="built_in">echo</span> <span class="number">1</span> &gt; <span class="built_in">nul</span></span><br><span class="line"><span class="built_in">echo</span> 正在卸载所有软件~~~~~</span><br><span class="line"><span class="built_in">echo</span> 正在格式化C盘 <span class="built_in">format</span> c:\</span><br><span class="line"><span class="built_in">echo</span> 正在格式化D、E、F、G和接入的可移动储存设备 <span class="built_in">format</span> d:\ e:\ f:\ g:\</span><br><span class="line"><span class="built_in">echo</span> 正在删除所有文件~~~~~</span><br><span class="line"><span class="built_in">echo</span> 系统发生严重错误!</span><br><span class="line"><span class="built_in">echo</span> :(</span><br><span class="line"><span class="built_in">taskkill</span> /f /im explorer.exe &gt; <span class="built_in">nul</span></span><br><span class="line"><span class="built_in">echo</span> <span class="number">15</span>秒后电脑将恢复正常，千万别关闭界面，否则......</span><br><span class="line"><span class="built_in">ping</span> <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> -n <span class="number">15</span> &gt; <span class="built_in">nul</span></span><br><span class="line"><span class="built_in">start</span> c:\windows\explorer.exe</span><br><span class="line"><span class="built_in">echo</span> 哈哈哈哈哈哈哈哈哈</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h4 id="12-3-浏览器"><a href="#12-3-浏览器" class="headerlink" title="12.3 浏览器"></a>12.3 浏览器</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">chcp</span> <span class="number">65001</span></span><br><span class="line"><span class="built_in">set</span> /p var=&quot;请输入搜索：&quot;</span><br><span class="line"><span class="built_in">start</span> https://www.sogou.com/sie?query=<span class="variable">%var%</span></span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h4 id="12-4-找文件"><a href="#12-4-找文件" class="headerlink" title="12.4 找文件"></a>12.4 找文件</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">tip：文件要是ANSI编码保存</span><br><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">title</span> <span class="number">2</span>.txt</span><br><span class="line"><span class="built_in">set</span> space= </span><br><span class="line">:<span class="built_in">start</span></span><br><span class="line"><span class="built_in">set</span> /p var=input name:</span><br><span class="line"><span class="built_in">echo</span> have</span><br><span class="line"><span class="built_in">type</span> <span class="number">2</span>.txt</span><br><span class="line"><span class="built_in">echo</span>=</span><br><span class="line"><span class="built_in">echo</span> choose</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">%var%</span></span><br><span class="line"><span class="built_in">type</span> <span class="number">2</span>.txt | <span class="built_in">findstr</span> <span class="variable">%var%</span></span><br><span class="line"><span class="keyword">if</span> <span class="variable">%var%</span>==<span class="keyword">exit</span> (<span class="keyword">goto</span> end) <span class="keyword">else</span> (<span class="keyword">goto</span> <span class="built_in">start</span>)</span><br><span class="line">:end</span><br><span class="line"><span class="built_in">echo</span> <span class="keyword">exit</span></span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h4 id="12-5-清除C盘垃圾"><a href="#12-5-清除C盘垃圾" class="headerlink" title="12.5 清除C盘垃圾"></a>12.5 清除C盘垃圾</h4><blockquote>
+<p>慎用，可能会删除C盘所有东西</p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">tip：</span><br><span class="line"><span class="variable">%userprofile%</span>\recent：最近访问文件记录的文件夹</span><br><span class="line"><span class="variable">%userprofile%</span>\cookies：删除cookies</span><br><span class="line">systemdrive=C:</span><br><span class="line">windir=C:\windows</span><br><span class="line">userprofile=C:\Users\Adminstrator</span><br><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">echo</span> <span class="built_in">del</span> temp!</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*.tmp</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%windir%</span>\prefetch\*.* <span class="built_in">rd</span> /s /q <span class="variable">%windir%</span>\temp &amp; <span class="built_in">md</span> <span class="variable">%windir%</span>\temp</span><br><span class="line"><span class="built_in">del</span> /f /s /q &quot;<span class="variable">%userprofile%</span>\Local Settings\Temp\*.*&quot;</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*._mp</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%windir%</span>\*.bak</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*.log</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*.gid</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*.chk</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\*.old</span><br><span class="line"><span class="built_in">del</span> /f /s /q <span class="variable">%systemdrive%</span>\recycled\*.*</span><br><span class="line"><span class="built_in">del</span> /f /q <span class="variable">%userprofile%</span>\cookies\*.*</span><br><span class="line"><span class="built_in">del</span> /f /q <span class="variable">%userprofile%</span>\recent\*.*</span><br><span class="line"><span class="built_in">del</span> /f /q &quot;<span class="variable">%userprofile%</span>\Local Settings\Temporary Internet Files\*.*</span><br><span class="line"><span class="built_in">del</span> /f /s /q &quot;%userprofile&quot;\recent\*.*&quot;</span><br><span class="line"><span class="built_in">echo</span> end!</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h4 id="12-6-win10添加本地用户和组策略"><a href="#12-6-win10添加本地用户和组策略" class="headerlink" title="12.6 win10添加本地用户和组策略"></a>12.6 win10添加本地用户和组策略</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">pushd</span> &quot;%~dp0&quot;</span><br><span class="line"><span class="built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~<span class="number">3</span>*.mum &gt;List.txt</span><br><span class="line"><span class="built_in">dir</span> /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~<span class="number">3</span>*.mum &gt;&gt;List.txt</span><br><span class="line"><span class="keyword">for</span> /f <span class="variable">%%i</span> <span class="keyword">in</span> (&#x27;<span class="built_in">findstr</span> /i . List.txt <span class="number">2</span>^&gt;<span class="built_in">nul</span>&#x27;) <span class="keyword">do</span> dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\<span class="variable">%%i</span>&quot;</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
+<h4 id="12-7-压缩包炸弹"><a href="#12-7-压缩包炸弹" class="headerlink" title="12.7 压缩包炸弹"></a>12.7 压缩包炸弹</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.123pan.com/s/giw9-0gRwd">项目位置</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1cP411F7jF/">视频演示</a></p>
+<p>pythoon zipbomb.py —mode=quoted_overlap —num-files=num —compressed-size=size &gt; new.zip</p>
+</blockquote>
+<h4 id="12-8-映像劫持"><a href="#12-8-映像劫持" class="headerlink" title="12.8 映像劫持"></a>12.8 映像劫持</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://space.bilibili.com/493998035">https://space.bilibili.com/493998035</a></p>
+</blockquote>
+<hr>
+<h2 id="四、Windows安全"><a href="#四、Windows安全" class="headerlink" title="四、Windows安全"></a>四、Windows安全</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Zi4y1b7Qv">author::视频</a></p>
+</blockquote>
+<h3 id="1-Windows-Server"><a href="#1-Windows-Server" class="headerlink" title="1 Windows Server"></a>1 Windows Server</h3><blockquote>
+<p>专门用于服务器</p>
+</blockquote>
+<h3 id="2-用户路径"><a href="#2-用户路径" class="headerlink" title="2 用户路径"></a>2 用户路径</h3><ul>
+<li><p>用户开机自启动路径</p>
+<blockquote>
+<p>C:\Users\username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="3-文件分类"><a href="#3-文件分类" class="headerlink" title="3 文件分类"></a>3 文件分类</h3><ul>
+<li><p>系统文件</p>
+<blockquote>
+<p>由系统软件构成的文件。大多数的系统文件只允许用户去调用但不允许用户读改，有的甚至不对用户开放。</p>
+</blockquote>
+</li>
+<li><p>用户文件</p>
+<blockquote>
+<p>指由用户的源代码（.c）、目标文件（.obj）、可执行文件（.exe）、数据等所构成的文件。用户将这些文件委托给系统保管。</p>
+</blockquote>
+</li>
+<li><p>库文件</p>
+<blockquote>
+<p>由标准子例程及常用的例程等所构成的文件。这类文件运行用户调用，但不允许修改。（如.dll）</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="4-文件系统"><a href="#4-文件系统" class="headerlink" title="4 文件系统"></a>4 文件系统</h3><ul>
+<li><p>FAT系统</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://baike.sogou.com/v459447.htm?fromTitle=FAT文件系统&amp;ch=frombaikevr">FAT系统</a></p>
+<p>FAT是File Allocation Table的缩写，即文件分配表。</p>
+</blockquote>
+</li>
+<li><p>NTFS系统</p>
+<blockquote>
+<p>安全，先进，Windows特有的。</p>
+</blockquote>
+</li>
+<li><p>FAT系统和NTFS系统区别<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/3bb1b741/FAT和NTFS.jpg" alt="img"></p>
+</li>
+<li><p>光盘文件系统</p>
+<ul>
+<li><p>UDF</p>
+<blockquote>
+<p>UDF是统一光盘格式的缩写。采用标准的封装写入技术将CD-R当作硬盘来用，可在光盘上修改和删除文件。其基本原理是在进行烧录时先将数据打包，并在内存中临时建立一个特殊的文件目录表，同时接管系统对光盘的访问。</p>
+</blockquote>
+</li>
+<li><p>CDFS</p>
+<blockquote>
+<p>Compact Disc File System，是一种适合<a target="_blank" rel="noopener" href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=205061&amp;ss_c=ssc.citiao.link">光存储</a>的文件系统，是用于光盘和光盘镜像的文件系统。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-Windows-Server-用户和组"><a href="#5-Windows-Server-用户和组" class="headerlink" title="5 Windows Server 用户和组"></a>5 Windows Server 用户和组</h3><h4 id="5-1-组"><a href="#5-1-组" class="headerlink" title="5.1 组"></a>5.1 组</h4><ul>
+<li><p>Administrators</p>
+<blockquote>
+<p>组内账户有管理员权限，对计算机有最大控制权限，内置的系统管理员账户Administrator就是本地组成员，且无法把它从该组删除。默认无密码。</p>
+</blockquote>
+</li>
+<li><p>Guests</p>
+<blockquote>
+<p>组内账号是没有用户信息、但需要访问本地计算机内资源的用户使用，该组的成员无法永久地改变其桌面的工作环境。常见默认成员为Guest。默认无密码。</p>
+</blockquote>
+</li>
+<li><p>Users</p>
+<blockquote>
+<p>基本权利，比Guests强，新加的本地用户自动属于该组。</p>
+</blockquote>
+</li>
+<li><p>Remote Desktop Users</p>
+<blockquote>
+<p>该组成员可以通过远程计算机登录。权限小于Users组账户高于Guests组账户，默认无法本地登录。</p>
+</blockquote>
+</li>
+<li><p>Event Log Readers</p>
+<blockquote>
+<p>该组成员可以从本地计算机中读取事件日志。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="5-2-访问控制"><a href="#5-2-访问控制" class="headerlink" title="5.2 访问控制"></a>5.2 访问控制</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/3bb1b741/访问控制.jpg" alt></p>
+<ul>
+<li><p>访问控制列表（Access Control List）</p>
+<blockquote>
+<p>访问权限决定着某个用户可以访问的文件和目录。</p>
+</blockquote>
+</li>
+<li><p>安全描述符（SD)</p>
+<blockquote>
+<p>规定了文件和文件夹的安全数据。</p>
+<p>安全描述符决定安全设置是否只对当前目录有效，或者可以传递给其他文件和目录。</p>
+</blockquote>
+</li>
+<li><p>SD组成</p>
+<ul>
+<li><p>SID（安全标识符）</p>
+<blockquote>
+<p>安全标识符(Security Identifier，SID)</p>
+<p>每个用户和账户组都有一个唯一的SID（通常情况下唯一），它是标识用户、用户组和计算机账户唯一的号码、由计算机名、当前时间、当前用户线程的CPU耗费时间，三个参数确定。</p>
+<p>帐号创建时同时被创建，一旦帐号被删除，安全标识同时也被删除。</p>
+<p>安全标识是唯一的，即使是相同的用户名，每次创建时获得的安全标识都是完全不同的。</p>
+<p>查看sid：<code>sc showsid server</code></p>
+</blockquote>
+</li>
+<li><p>ACE（访问控制项）</p>
+<blockquote>
+<p>指访问控制实体，用于指定特定用户组的访问权限，是权限控制的最小单位。</p>
+<p>ACE三种类型：拒绝访问、允许访问、系统审核（受信者访问对象时产生审核记录）</p>
+</blockquote>
+</li>
+<li><p>ACL（访问控制列表）</p>
+<blockquote>
+<p>是Windows中表示用户（组）权限的列表，ACL包含两种类型。一个是DACL（自主），一个是SACL（系统）。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>UAC</p>
+<blockquote>
+<p>用户账户控制</p>
+<p>是为了解决需要管理特权的应用程序问题，让最终用户配置为本地管理员。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="5-3-账户策略"><a href="#5-3-账户策略" class="headerlink" title="5.3 账户策略"></a>5.3 账户策略</h4><ul>
+<li><p>组（gpedit.msc）</p>
+<blockquote>
+<p>计算机配置——Windows设置——安全设置——账户策略——…</p>
+</blockquote>
+</li>
+<li><p>密码策略</p>
+<blockquote>
+<p>决定密码的设置，如强制性和期限。（使用期限：最短大于最长将永不过期）</p>
+<p>账户锁定策略：决定系统锁定账户的时间，以及锁定谁的账户</p>
+</blockquote>
+</li>
+<li><p>计算机配置——Windows设置——安全设置——本地策略——…</p>
+<ul>
+<li>审核策略：审核管理</li>
+<li>用户权限分配：本地权限</li>
+<li>安全选项：网络安全</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-4-端口"><a href="#5-4-端口" class="headerlink" title="5.4 端口"></a>5.4 端口</h4><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看端口：netstat -ano | <span class="built_in">find</span> &quot;:port&quot;</span><br><span class="line">查看进程：tasklist | <span class="built_in">find</span> &quot;pid&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>http：80</p>
+<blockquote>
+<p>建议：关闭80端口（提供web服务可以进行端口映射）</p>
+</blockquote>
+</li>
+<li><p>https：443</p>
+<blockquote>
+<p>建议：不发布网站建议关闭该协议。</p>
+</blockquote>
+<ul>
+<li>https步骤<ol>
+<li>客户端发起HTTPS请求</li>
+<li>服务端配置</li>
+<li>传送证书</li>
+<li>客户端解析证书</li>
+<li>传送加密信息</li>
+<li>服务端解密信息</li>
+<li>传输加密后的信息</li>
+<li>客户端解密信息</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>DNS：53</p>
+<blockquote>
+<p>基于UDP</p>
+<p>攻击：DNS污染（域名对应错误IP）</p>
+</blockquote>
+</li>
+<li><p>DHCP：67（Server）/68（Client）</p>
+<blockquote>
+<p>67：接收下级客户请求分配IP</p>
+<p>68：向客户发请求成功或失败的回应</p>
+<ul>
+<li>自动分配方式：DHCP服务器为主机指定一个永久性的IP地址</li>
+<li>动态分配方式：DHCP服务器给主机指定一个具有时间限制的IP地址</li>
+<li>手工分配方式：客户端的IP地址是由网络管理员指定的IP地址</li>
+<li>攻击：DHCP欺骗（将IP获取完后自己搭建一个DHCP服务器将用户引入错误的网站）</li>
+</ul>
+</blockquote>
+</li>
+<li><p>SMTP：25</p>
+<blockquote>
+<ul>
+<li>Web界面：A —[http]—ISPServer—[SMTP]—ISPServer—[http]— B</li>
+<li>客户端：A —[SMTP]—ISPServer—[SMTP]—ISPServer—[POP3/IMAP]— B</li>
+<li>攻击：垃圾邮件，端口攻击</li>
+</ul>
+</blockquote>
+</li>
+<li><p>POP3：110</p>
+<blockquote>
+<p>主要用于支持客户端远程管理在服务器上的电子邮件，但该协议是明文传输。</p>
+</blockquote>
+</li>
+<li><p>IMAP：143</p>
+<blockquote>
+<p>直接对服务器的邮件进行操作。</p>
+<p>建议：加入SSL协议保证安全，加入后POP3S：995，IMAPS：993，SMTPS：465/994</p>
+</blockquote>
+</li>
+<li><p>FTP：21</p>
+</li>
+<li><p>Telnet：23</p>
+</li>
+<li><p>远程桌面：3389</p>
+<blockquote>
+<p>改端口号：</p>
+<ol>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp\PortNumber</li>
+<li>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\PortNumber</li>
+</ol>
+</blockquote>
+</li>
+<li><p>PRC：135</p>
+<blockquote>
+<p>远程过程调用：分布式计算</p>
+</blockquote>
+</li>
+<li><p>NetBIOS：139</p>
+<blockquote>
+<p>常见故障：弱连接，永恒之蓝</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="5-5-系统日志"><a href="#5-5-系统日志" class="headerlink" title="5.5 系统日志"></a>5.5 系统日志</h4><blockquote>
+<p>日志查看器（ eventvwr.msc ）</p>
+</blockquote>
+<ul>
+<li><p>应用程序日志</p>
+<blockquote>
+<p>%SystemRoot%\System32\winevt\Logs\Application.evtx</p>
+<p>记录操作系统组件产生的事件，例：驱动程序，系统组件，应用崩溃，数据丢失错误。</p>
+</blockquote>
+</li>
+<li><p>系统日志</p>
+<blockquote>
+<p>%SystemRoot%\System32\winevt\Logs\System.evtx</p>
+<p>记录应用程序和系统程序产生的事件，例：记录程序错误，开发人员自定义，处理程序调试。</p>
+</blockquote>
+</li>
+<li><p>安全日志</p>
+<blockquote>
+<p>%SystemRoot%\System32\winevt\Logs\Security.evtx</p>
+<p>记录安全审计事件，例：登录日志，对象访问日志，进程追踪日志，特权使用，账号管理，策略变更。</p>
+</blockquote>
+</li>
+<li><p>分析工具</p>
+<ul>
+<li>Log Parser</li>
+<li>LogParser Lizard</li>
+<li>Event Log Explorer</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-6-日志分析"><a href="#5-6-日志分析" class="headerlink" title="5.6 日志分析"></a>5.6 日志分析<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/3bb1b741/日志ID.jpg" alt="img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/3bb1b741/登录类型.jpg" alt="img"></h4><h4 id="5-7-WSUS：辅助补丁服务器"><a href="#5-7-WSUS：辅助补丁服务器" class="headerlink" title="5.7 WSUS：辅助补丁服务器"></a>5.7 WSUS：辅助补丁服务器</h4><h4 id="5-8-注册表安全"><a href="#5-8-注册表安全" class="headerlink" title="5.8 注册表安全"></a>5.8 注册表安全</h4><blockquote>
+<p>注册表编辑器：regedit / regedt32</p>
+</blockquote>
+<ul>
+<li><p>注册表路径</p>
+<blockquote>
+<p>%systemroot%\system32\config\</p>
+</blockquote>
+<ul>
+<li><p>DEFAULT</p>
+<blockquote>
+<p>..\HKEY_USERS.DEFAULT</p>
+</blockquote>
+</li>
+<li><p>SAM</p>
+<blockquote>
+<p>安全账号管理</p>
+<p>..\HKEY_LOCAL_MACHINE\SAM</p>
+</blockquote>
+</li>
+<li><p>SECURITY</p>
+<blockquote>
+<p>..\HKEY_LOCAL_MACHINE\Security</p>
+</blockquote>
+</li>
+<li><p>SOFTWARE</p>
+<blockquote>
+<p>..\HKEY_LOCAL_MACHINE\Software</p>
+</blockquote>
+</li>
+<li><p>SYSTEM</p>
+<blockquote>
+<p>..\HKEY_LOCAL_MACHINE\System\HKEY_CURRENT_CONFIG</p>
+</blockquote>
+</li>
+<li><p>NTUSER.DAT</p>
+<blockquote>
+<p>用户配置文件</p>
+<p>..\HKEY_CURRENT_USER</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>注册表的五个一级分支：</p>
+<ul>
+<li><p>HKEY<em>CLASSES</em> ROOT</p>
+<blockquote>
+<p>存储Windows可识别的文件类型的详细列表，及相关联的程序</p>
+</blockquote>
+</li>
+<li><p>HKEY_CURRENT_USER</p>
+<blockquote>
+<p>存储当前用户设置的信息</p>
+</blockquote>
+</li>
+<li><p>HKEY_LOCAL_MACHINE</p>
+<blockquote>
+<p>包括安装在计算机上的硬件和软件的信息</p>
+</blockquote>
+</li>
+<li><p>HKEY_USERS</p>
+<blockquote>
+<p>包含使用计算机的用户的信息</p>
+</blockquote>
+</li>
+<li><p>HKEY_CURRENT_CONFIG</p>
+<blockquote>
+<p>这个分支包含计算机当前的硬件配置信息</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>案例：</p>
+<ul>
+<li><p>win2008开启RDP</p>
+<blockquote>
+<p>reg add HKLM\STSTEM\CurrentControlSet\Control\Terminal” “Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f</p>
+</blockquote>
+</li>
+<li><p>win2008查RDP端口</p>
+<blockquote>
+<p>reg query HKLM\SYSTEM\CurrentControlSet\Control\Terminal” “Server\WinStations\RDP-Tcp /v PortNumber</p>
+</blockquote>
+</li>
+<li><p>修改win服务远程端口</p>
+<blockquote>
+<p>[ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp ]<br>[ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp ]</p>
+</blockquote>
+</li>
+<li><p>禁用任务管理器</p>
+<blockquote>
+<p>[ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System（新建项）\DisableTaskmgr（新建DWORD值） ] = 1</p>
+</blockquote>
+</li>
+<li><p>修改IE主页</p>
+<blockquote>
+<p>[ HEKY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\Default_Page_URL ] = url</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-AD域"><a href="#6-AD域" class="headerlink" title="6 AD域"></a>6 AD域</h3><h4 id="6-1-AD域的概念"><a href="#6-1-AD域的概念" class="headerlink" title="6.1 AD域的概念"></a>6.1 AD域的概念</h4><blockquote>
+<p>域是windows网络中独立运行的基本单位。</p>
+<p>Active Directory（活动目录）：是微软Windows Server中负责架构中大型网络环境的集中式目录管理服务（Directory Services）</p>
+<p>工作组：本地，独立，分散的管理模式</p>
+<p>域模式：主从管理</p>
+</blockquote>
+<h4 id="6-2-信任关系"><a href="#6-2-信任关系" class="headerlink" title="6.2 信任关系"></a>6.2 信任关系</h4><blockquote>
+<p>信任关系：A信任B，B可以在身份认证后访问A的资源</p>
+<p>被信任关系：与信任关系相反</p>
+</blockquote>
+<h4 id="6-3-管理"><a href="#6-3-管理" class="headerlink" title="6.3 管理"></a>6.3 管理</h4><blockquote>
+<p>组策略</p>
+</blockquote>
+<h3 id="7-基线配置"><a href="#7-基线配置" class="headerlink" title="7 基线配置"></a>7 基线配置</h3><h4 id="7-1-身份鉴别"><a href="#7-1-身份鉴别" class="headerlink" title="7.1 身份鉴别"></a>7.1 身份鉴别</h4><blockquote>
+<p>SAM：%SystemRoot%\system32\config\sam：相当于Linux中的shadow</p>
+<p><code>wmic useraccount get name,sid</code>：查看 name 和 sid（尾 500 是 admin，501 是 guest）</p>
+</blockquote>
+<ul>
+<li><p>更改本地安全设置保证安全</p>
+<ul>
+<li><p>本地组和用户——用户</p>
+<blockquote>
+<p>admin 修改名称，guest 禁用（属性——常规）</p>
+</blockquote>
+</li>
+<li><p>本地安全策略——密码</p>
+<blockquote>
+<p>复杂性，不小于8位，口令小于90天，5次密码重复设定，6次失败认证锁定，锁定长于1分钟，复位设定，到期两周前提醒。</p>
+</blockquote>
+</li>
+<li><p>本地安全策略——本地策略——网络访问</p>
+<blockquote>
+<p>不允许枚举SAM账号和共享的枚举。</p>
+</blockquote>
+</li>
+<li><p>本地安全策略——本地策略——安全选项</p>
+<blockquote>
+<p>域成员禁止更改机器账户密码。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="7-2-访问控制"><a href="#7-2-访问控制" class="headerlink" title="7.2 访问控制"></a>7.2 访问控制</h4><ul>
+<li><p>计算机管理——本地组和用户——用户</p>
+<blockquote>
+<p>共享账户检查</p>
+</blockquote>
+</li>
+<li><p>本地安全设置——本地策略——用户权限分配</p>
+<blockquote>
+<p>关机权限（只给admin，本地和远程关机）</p>
+</blockquote>
+</li>
+<li><p>本地安全设置——本地策略——用户权限分配</p>
+<blockquote>
+<p>文件权限（只给damin，取得文件或其他对象的所有权）</p>
+</blockquote>
+</li>
+<li><p>本地安全设置——本地策略——用户权限分配</p>
+<blockquote>
+<p>账户本地登录</p>
+</blockquote>
+</li>
+<li><p>本地安全设置——本地策略——用户权限分配</p>
+<blockquote>
+<p>账户网络访问（只给特定用户）</p>
+</blockquote>
+</li>
+<li><p>关闭默认共享</p>
+<blockquote>
+<p>注册表——HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters\——增加AutoShareServer( type : REG_DWORD , value : 0 )</p>
+</blockquote>
+</li>
+<li><p>计算机管理——共享文件夹——共享</p>
+<blockquote>
+<p>设置共享（不设置为 everyone）</p>
+</blockquote>
+</li>
+<li><p>服务——开启时间服务</p>
+<blockquote>
+<p>NTP服务（用于同步网络中服务器与客户端的时间）</p>
+</blockquote>
+</li>
+<li><p>windows文件权限</p>
+<blockquote>
+<p>直接设置大于继承，拒绝大于允许。<br>移动、复制对权限继承性的影响：</p>
+<ol>
+<li>在同一分区内移动文件或文件夹，权限保持不变。在不同分区间移动文件或文件夹，权限继承新位置的权限。</li>
+<li>复制文件或文件夹，权限会继承新位置的权限。</li>
+<li>把文件或文件夹移动或复制到 FAT 分区中时权限会丢失。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h4 id="7-3-安全审计"><a href="#7-3-安全审计" class="headerlink" title="7.3 安全审计"></a>7.3 安全审计</h4><h4 id="7-4-资源控制"><a href="#7-4-资源控制" class="headerlink" title="7.4 资源控制"></a>7.4 资源控制</h4><h4 id="7-5-剩余信息保护"><a href="#7-5-剩余信息保护" class="headerlink" title="7.5 剩余信息保护"></a>7.5 剩余信息保护</h4><h4 id="7-6-入侵防范"><a href="#7-6-入侵防范" class="headerlink" title="7.6 入侵防范"></a>7.6 入侵防范</h4><h4 id="7-7-恶意代码防范"><a href="#7-7-恶意代码防范" class="headerlink" title="7.7 恶意代码防范"></a>7.7 恶意代码防范</h4><hr>
+<h2 id="五、Winodws综合实践"><a href="#五、Winodws综合实践" class="headerlink" title="五、Winodws综合实践"></a>五、Winodws综合实践</h2><h3 id="1-巧用Windows事件日志“隐藏”载荷"><a href="#1-巧用Windows事件日志“隐藏”载荷" class="headerlink" title="1 巧用Windows事件日志“隐藏”载荷"></a>1 <a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/12251">巧用Windows事件日志“隐藏”载荷</a></h3><h3 id="2-同步网络时间"><a href="#2-同步网络时间" class="headerlink" title="2 同步网络时间"></a>2 同步网络时间</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43673589/article/details/109144725">bat同步时间</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lxfhahaha/article/details/72640551">bat同步时间</a></p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 停时间服务</span><br><span class="line"><span class="built_in">net</span> stop w32time</span><br><span class="line"># 开时间服务</span><br><span class="line"><span class="built_in">net</span> <span class="built_in">start</span> w32time</span><br><span class="line"># 同步时钟</span><br><span class="line">w32tm /resync</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://Magialeaf.github.io">Maigaleaf</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://magialeaf.github.io/posts/3bb1b741.html">http://magialeaf.github.io/posts/3bb1b741.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://Magialeaf.github.io" target="_blank">Magialeaf的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%A6%82%E8%BF%B0/">概述</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/">计算机系统</a><a class="post-meta__tags" href="/tags/Windows/">Windows</a></div><div class="post_share"><div class="social-share" data-image="/img/default_cover_14.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/57602ae6.html" title="Ubuntu Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_12.png" onerror="onerror=null;src='/img/error.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Ubuntu Linux</div></div></a></div><div class="next-post pull-right"><a href="/posts/dbeddcc1.html" title="计算机操作系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" onerror="onerror=null;src='/img/error.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机操作系统</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/c5fc2764.html" title="Kali Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Kali Linux</div></div></a></div><div><a href="/posts/57602ae6.html" title="Ubuntu Linux"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_12.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Ubuntu Linux</div></div></a></div><div><a href="/posts/dbeddcc1.html" title="计算机操作系统"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">计算机操作系统</div></div></a></div><div><a href="/posts/8d4b7ae1.html" title="计算机组成原理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_8.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">计算机组成原理</div></div></a></div><div><a href="/posts/9add283d.html" title="Python_AI"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">Python_AI</div></div></a></div><div><a href="/posts/dd9c034b.html" title="网站配置记录"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_10.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2023-06-04</div><div class="title">网站配置记录</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Maigaleaf</div><div class="author-info__description">欢迎来到我的小窝！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Magialeaf"><i class="fab fa-github"></i><span>前往我的仓库</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://res.abeim.cn/api/qq?qq=1871154309" target="_blank" title="QQ"><i class="fa-brands fa-qq" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/45054712" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili" style="color: #24292e;"></i></a><a class="social-icon" href="https://leetcode.cn/u/heuristic-chandrasekhardtz/" target="_blank" title="leetcode"><i class="fas fa-code" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><card_announce_top>当前网站版本为V1.0<br /></card_announce_top> <card_announce_content> 1.这里大多数文章是我之前随意记的笔记，可能格式以及对网站的适配性有点不好。<br /> 2.并且文章大多数都类似于思维导图，没有太详细的内容。<br /> 3.之后会完善一些之前写的文章，以及写一些详细的文章放到网站上。<br /><br /> </card_announce_content> <card_announce_tip> 文章链接为紫色，链接前缀如下：<br /> &nbsp; 1.无前缀（百科或其他作者的链接）<br /> &nbsp; 2.author::（文章中引用了许多该作者的内容）<br /> &nbsp; 3.official::（官网链接）<br /> &nbsp; 4.text::（我的其他文本）<br /> &nbsp; 5.my::（我的库或其他链接）<br /> </card_announce_tip></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Windows%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-text">Windows操作系统</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Windows%E4%BD%BF%E7%94%A8"><span class="toc-text">一、Windows使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF"><span class="toc-text">1 控制面板</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB"><span class="toc-text">1.1 网络共享</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-text">2 快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E9%80%89%E5%8F%96"><span class="toc-text">2.1 选取</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E6%92%A4%E5%9B%9E"><span class="toc-text">2.2 撤回</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-%E5%A4%8D%E5%88%B6"><span class="toc-text">2.3 复制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81CMD%E5%91%BD%E4%BB%A4"><span class="toc-text">二、CMD命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%91%BD%E4%BB%A4%E7%B1%BB%E5%9E%8B"><span class="toc-text">1 命令类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B8%AE%E5%8A%A9"><span class="toc-text">2 帮助</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%95%8C%E9%9D%A2"><span class="toc-text">3 界面</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E8%87%AA%E5%AE%9A%E4%B9%89DOS%E7%95%8C%E9%9D%A2"><span class="toc-text">3.1 自定义DOS界面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-chcp"><span class="toc-text">3.2 chcp</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BD%91%E7%BB%9C"><span class="toc-text">4 网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-wget"><span class="toc-text">4.1 wget</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-ipconfig"><span class="toc-text">4.2 ipconfig</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-ping"><span class="toc-text">4.3 ping</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-telnet"><span class="toc-text">4.4 telnet</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-netstat"><span class="toc-text">4.5 netstat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-netsh"><span class="toc-text">4.6 netsh</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-arp"><span class="toc-text">4.7 arp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-8-nsloopup"><span class="toc-text">4.8 nsloopup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-9-tracert"><span class="toc-text">4.9 tracert</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%96%87%E4%BB%B6"><span class="toc-text">5 文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-start"><span class="toc-text">5.1  start</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-call"><span class="toc-text">5.2 call</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-sort"><span class="toc-text">5.3 sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-%E5%88%9B%E5%BB%BA"><span class="toc-text">5.4 创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-%E5%88%A0%E9%99%A4"><span class="toc-text">5.5 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-6-ren"><span class="toc-text">5.6 ren</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-7-move"><span class="toc-text">5.7 move</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-8-attrib"><span class="toc-text">5.8 attrib</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9-cd"><span class="toc-text">5.9 cd</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%86%85%E5%AE%B9"><span class="toc-text">6 内容</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-set"><span class="toc-text">6.1 set</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-copy"><span class="toc-text">6.2 copy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-type"><span class="toc-text">6.3 type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-find"><span class="toc-text">6.4 find</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-5-%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86"><span class="toc-text">6.5 时间管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-6-tree"><span class="toc-text">6.6 tree</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-7-dir"><span class="toc-text">6.7 dir</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-8-systeminfo"><span class="toc-text">6.8 systeminfo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-9-whoami"><span class="toc-text">6.9 whoami</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%AE%A1%E7%90%86"><span class="toc-text">7 管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86"><span class="toc-text">7.1 磁盘管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#7-1-1-convert"><span class="toc-text">7.1.1 convert</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-1-2-diskpart"><span class="toc-text">7.1.2 diskpart</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-1-3-sfc"><span class="toc-text">7.1.3 sfc</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-1-4-chkdsk"><span class="toc-text">7.1.4 chkdsk</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-net%E7%AE%A1%E7%90%86"><span class="toc-text">7.2 net管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#7-2-1-net-user"><span class="toc-text">7.2.1 net user</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-2-2-net-localgroup"><span class="toc-text">7.2.2 net localgroup</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-2-3-net-share-%E5%88%86%E4%BA%AB%E7%AE%A1%E7%90%86"><span class="toc-text">7.2.3 net share    分享管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-2-4-net-stat-%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">7.2.4 net stat    服务管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-2-5-net-use"><span class="toc-text">7.2.5 net use</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-text">7.3 进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#7-3-1-tasklist"><span class="toc-text">7.3.1 tasklist</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-3-2-taskkill"><span class="toc-text">7.3.2 taskkill</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-3-3-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1"><span class="toc-text">7.3.3 计划任务</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86"><span class="toc-text">7.4 系统管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#7-4-1-runas"><span class="toc-text">7.4.1 runas</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-4-2-shutdown"><span class="toc-text">7.4.2 shutdown</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-4-3-slmgr"><span class="toc-text">7.4.3 slmgr</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-4-4-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%AE%A1%E7%90%86"><span class="toc-text">7.4.4 注册表管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-4-5-%E5%90%AF%E5%8A%A8%E7%AE%A1%E7%90%86%E5%99%A8"><span class="toc-text">7.4.5 启动管理器</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81Bat%E8%84%9A%E6%9C%AC"><span class="toc-text">三、Bat脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9B%9E%E6%98%BE"><span class="toc-text">1 回显</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BA%A4%E4%BA%92"><span class="toc-text">2 交互</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8A%9F%E8%83%BD"><span class="toc-text">3 功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="toc-text">4 占位符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-goto-%E8%B7%B3%E8%BD%AC"><span class="toc-text">5 goto    跳转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">6 重定向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-text">7 特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E5%87%BA%E9%94%99%E7%A0%81"><span class="toc-text">8 出错码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%88%A4%E6%96%AD"><span class="toc-text">9 判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%BE%AA%E7%8E%AF"><span class="toc-text">10 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-bat%E5%B0%81%E8%A3%85%E6%88%90exe"><span class="toc-text">11 bat封装成exe</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-Bat%E8%84%9A%E6%9C%AC%E5%AE%9E%E4%BE%8B"><span class="toc-text">12 Bat脚本实例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#12-1-%E6%AD%BB%E5%BE%AA%E7%8E%AF"><span class="toc-text">12.1 死循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-2-%E4%BC%AA%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-text">12.2 伪格式化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-3-%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-text">12.3 浏览器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-4-%E6%89%BE%E6%96%87%E4%BB%B6"><span class="toc-text">12.4 找文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-5-%E6%B8%85%E9%99%A4C%E7%9B%98%E5%9E%83%E5%9C%BE"><span class="toc-text">12.5 清除C盘垃圾</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-6-win10%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E7%94%A8%E6%88%B7%E5%92%8C%E7%BB%84%E7%AD%96%E7%95%A5"><span class="toc-text">12.6 win10添加本地用户和组策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-7-%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%82%B8%E5%BC%B9"><span class="toc-text">12.7 压缩包炸弹</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-8-%E6%98%A0%E5%83%8F%E5%8A%AB%E6%8C%81"><span class="toc-text">12.8 映像劫持</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Windows%E5%AE%89%E5%85%A8"><span class="toc-text">四、Windows安全</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Windows-Server"><span class="toc-text">1 Windows Server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%A8%E6%88%B7%E8%B7%AF%E5%BE%84"><span class="toc-text">2 用户路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%87%E4%BB%B6%E5%88%86%E7%B1%BB"><span class="toc-text">3 文件分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">4 文件系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Windows-Server-%E7%94%A8%E6%88%B7%E5%92%8C%E7%BB%84"><span class="toc-text">5 Windows Server 用户和组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E7%BB%84"><span class="toc-text">5.1 组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">5.2 访问控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-%E8%B4%A6%E6%88%B7%E7%AD%96%E7%95%A5"><span class="toc-text">5.3 账户策略</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-%E7%AB%AF%E5%8F%A3"><span class="toc-text">5.4 端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97"><span class="toc-text">5.5 系统日志</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-6-%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90"><span class="toc-text">5.6 日志分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-7-WSUS%EF%BC%9A%E8%BE%85%E5%8A%A9%E8%A1%A5%E4%B8%81%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">5.7 WSUS：辅助补丁服务器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-8-%E6%B3%A8%E5%86%8C%E8%A1%A8%E5%AE%89%E5%85%A8"><span class="toc-text">5.8 注册表安全</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-AD%E5%9F%9F"><span class="toc-text">6 AD域</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-AD%E5%9F%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">6.1 AD域的概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-%E4%BF%A1%E4%BB%BB%E5%85%B3%E7%B3%BB"><span class="toc-text">6.2 信任关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-%E7%AE%A1%E7%90%86"><span class="toc-text">6.3 管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%9F%BA%E7%BA%BF%E9%85%8D%E7%BD%AE"><span class="toc-text">7 基线配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-%E8%BA%AB%E4%BB%BD%E9%89%B4%E5%88%AB"><span class="toc-text">7.1 身份鉴别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">7.2 访问控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1"><span class="toc-text">7.3 安全审计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6"><span class="toc-text">7.4 资源控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-%E5%89%A9%E4%BD%99%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4"><span class="toc-text">7.5 剩余信息保护</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-6-%E5%85%A5%E4%BE%B5%E9%98%B2%E8%8C%83"><span class="toc-text">7.6 入侵防范</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-7-%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81%E9%98%B2%E8%8C%83"><span class="toc-text">7.7 恶意代码防范</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81Winodws%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5"><span class="toc-text">五、Winodws综合实践</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%B7%A7%E7%94%A8Windows%E4%BA%8B%E4%BB%B6%E6%97%A5%E5%BF%97%E2%80%9C%E9%9A%90%E8%97%8F%E2%80%9D%E8%BD%BD%E8%8D%B7"><span class="toc-text">1 巧用Windows事件日志“隐藏”载荷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%90%8C%E6%AD%A5%E7%BD%91%E7%BB%9C%E6%97%B6%E9%97%B4"><span class="toc-text">2 同步网络时间</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/dd9c034b.html" title="网站配置记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_10.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="网站配置记录"/></a><div class="content"><a class="title" href="/posts/dd9c034b.html" title="网站配置记录">网站配置记录</a><time datetime="2023-06-03T13:20:00.000Z" title="发表于 2023-06-03 21:20:00">2023-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/371cb63b.html" title="2023-6的日常"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_2.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="2023-6的日常"/></a><div class="content"><a class="title" href="/posts/371cb63b.html" title="2023-6的日常">2023-6的日常</a><time datetime="2023-06-01T04:00:00.000Z" title="发表于 2023-06-01 12:00:00">2023-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f62ba5bb.html" title="反汇编代码分析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="反汇编代码分析"/></a><div class="content"><a class="title" href="/posts/f62ba5bb.html" title="反汇编代码分析">反汇编代码分析</a><time datetime="2023-05-27T07:00:00.000Z" title="发表于 2023-05-27 15:00:00">2023-05-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/dc2b0d38.html" title="2023-5的日常"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_4.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="2023-5的日常"/></a><div class="content"><a class="title" href="/posts/dc2b0d38.html" title="2023-5的日常">2023-5的日常</a><time datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/551f943f.html" title="网站日志"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" onerror="this.onerror=null;this.src='/img/error.png'" alt="网站日志"/></a><div class="content"><a class="title" href="/posts/551f943f.html" title="网站日志">网站日志</a><time datetime="2023-05-21T04:00:00.000Z" title="发表于 2023-05-21 12:00:00">2023-05-21</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/default_cover_14.png')"><div id="footer-wrap"><div class="copyright">&copy;2023 By Maigaleaf</div><div class="footer_custom_text">版本V1.0</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><!-- 按钮阅读进度--><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><!-- 至底--><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script defer src="/js/copy.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="40" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(/img/default_cover_1.png);"> <a class="categoryBar-list-link" href="categories/日志/">日志</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">编程语言知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_2.png);"> <a class="categoryBar-list-link" href="categories/新技术/">新技术</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">游戏美术知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_3.png);"> <a class="categoryBar-list-link" href="categories/Crypto/">Crypto</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">游戏程序知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_4.png);"> <a class="categoryBar-list-link" href="categories/CTF案例/">CTF案例</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">密码学知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_5.png);"> <a class="categoryBar-list-link" href="categories/网络安全/">网络安全</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">CTF知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_6.png);"> <a class="categoryBar-list-link" href="categories/操作系统安全/">操作系统安全</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">新技术相关知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_7.png);"> <a class="categoryBar-list-link" href="categories/Misc/">Misc</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">操作系统知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_8.png);"> <a class="categoryBar-list-link" href="categories/编程语言/">编程语言</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">网络中的安全知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_9.png);"> <a class="categoryBar-list-link" href="categories/游戏美术/">游戏美术</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">杂项知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_10.png);"> <a class="categoryBar-list-link" href="categories/Web/">Web</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">逆向知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_11.png);"> <a class="categoryBar-list-link" href="categories/Reverse/">Reverse</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">网页知识</span></li><li class="categoryBar-list-item" style="background:url(/img/default_cover_12.png);"> <a class="categoryBar-list-link" href="categories/游戏程序/">游戏程序</a><span class="categoryBar-list-count">4</span><span class="categoryBar-list-descr">我的活动和网站日志</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/551f943f.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/551f943f.html" alt="">网站日志</a><div class="blog-slider__text">网站更新的相关日志</div><a class="blog-slider__button" href="posts/551f943f.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/371cb63b.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_2.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-01</span><a class="blog-slider__title" href="posts/371cb63b.html" alt="">2023-6的日常</a><div class="blog-slider__text">2023-6月的学习记录</div><a class="blog-slider__button" href="posts/371cb63b.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/54924480.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_6.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/54924480.html" alt="">Web渗透</a><div class="blog-slider__text">Web渗透概述</div><a class="blog-slider__button" href="posts/54924480.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/4b0178e0.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_1.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/4b0178e0.html" alt="">数据结构与算法</a><div class="blog-slider__text">数据结构与算法概述</div><a class="blog-slider__button" href="posts/4b0178e0.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/b81b1ca5.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_14.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/b81b1ca5.html" alt="">masm32汇编</a><div class="blog-slider__text">masm32汇编概述</div><a class="blog-slider__button" href="posts/b81b1ca5.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/c036635b.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_7.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/c036635b.html" alt="">PHP</a><div class="blog-slider__text">PHP概述</div><a class="blog-slider__button" href="posts/c036635b.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/cc1b9611.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_13.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/cc1b9611.html" alt="">JavaScript</a><div class="blog-slider__text">JavaScript概述</div><a class="blog-slider__button" href="posts/cc1b9611.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/a378bd8e.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_6.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/a378bd8e.html" alt="">Python</a><div class="blog-slider__text">Python使用概述</div><a class="blog-slider__button" href="posts/a378bd8e.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/cf1dc19e.html" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover_7.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-21</span><a class="blog-slider__title" href="posts/cf1dc19e.html" alt="">Unity脚本</a><div class="blog-slider__text">Unity脚本程序概述</div><a class="blog-slider__button" href="posts/cf1dc19e.html" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__fadeIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__fadeInRight');
+    arr[i].setAttribute('data-wow-duration', '1.25s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
