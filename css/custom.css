@@ -368,10 +368,3 @@ div#archive {
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1; /* 背景色 */
 }
-
-/*代码自动换行后产生的BUG的修复（会消耗性能）*/
-td.gutter
-{
-  visibility:hidden;
-  display: none;
-}
