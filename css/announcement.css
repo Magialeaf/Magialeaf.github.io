@@ -10,3 +10,9 @@
   background: rgba(106, 151, 112, 0.2);
   border-radius: 5px; /* 圆角 */
 } 
+
+#aside-content div div.announcement_content a.strong
+{
+  color: #DA20D8;
+}
+
